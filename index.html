@@ -1,26 +1,1469 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resource Management | The Roothub</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-    <header>
-        <a href="#"><img src="/images/roothub-full-BLUE.png" alt="" width="200"></a>
-        <nav>
-            <ul>
-                <li><a href="">Resources</a>
-                    <ul>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Digital Design</a></li>
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo"><a href="#"><img src="/images/roothub-full-BLUE.png" alt="" width="120"></a></div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name">The Roothub</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <li>
+                        <div class="nav-iocn-link">
+                            <a href="#">Resources</a>
+                            <i class='bx bxs-chevron-down resources-arrow arrow '></i>
+                        </div>
+                        <ul class="resources-sub-menu sub-menu">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Digital Design</a></li>
+                        </ul>
+                    </li>
+                    <div class="side-bar-hidden side-bar-nav">
+                        <li>
+                            <div class="nav-iocn-link">
+                                <a href="#">Category</a>
+                                <i class='bx bxs-chevron-down category-arrow arrow '></i>
+                            </div>
+                            <ul class="category-sub-menu sub-menu">
+                                <li><a href="#" data-li="html" id="item">HTML</a></li>
+                                <li><a href="#" data-li="css" id="item">CSS</a></li>
+                                <li><a href="#" data-li="javascript" id="item">JavaScript</a></li>
+                                <li><a href="#" data-li="react" id="item">React</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="side-bar-hidden side-bar-nav">
+                        <li>
+                            <div class="nav-iocn-link">
+                                <a href="#">Cornertones</a>
+                                <i class='bx bxs-chevron-down cornerstones-arrow arrow '></i>
+                            </div>
+                            <ul class="cornerstones-sub-menu sub-menu">
+                                <li><a href="#" id="item" data-li="wordpress">Wordpress</a></li>
+                                <li><a href="#" id="item" data-li="mamp">Mamp or Wampserver</a></li>
+                                <li><a href="#" id="item" data-li="git">GIT</a></li>
+                                <li><a href="#" id="item" data-li="vsc">Visual Studio Code</a></li>
+                                <li><a href="#" id="item" data-li="jquery">JQuery</a></li>
+                                <li><a href="#" id="item" data-li="boostrap">Bootsrap</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="side-bar-hidden side-bar-nav">
+                        <li>
+                            <div class="nav-iocn-link">
+                                <a href="#">Applications</a>
+                                <i class='bx bxs-chevron-down applications-arrow arrow '></i>
+                            </div>
+                            <ul class="applications-sub-menu sub-menu">
+                                <li><a href="#" id="item" data-li="atom">Atom</a></li>
+                                <!-- <li><a href="#" id="item" data-li="iterm2">Iterm2</a></li>
+                                <li><a href="#" id="item" data-li="evernote">Evernote</a></li>
+                                <li><a href="#" id="item" data-li="invision">Invision</a></li>
+                                <li><a href="#" id="item" data-li="flux">F.lux</a></li> -->
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="side-bar-hidden side-bar-nav">
+                        <li>
+                            <div class="nav-iocn-link">
+                                <a href="#">Extensions</a>
+                                <i class='bx bxs-chevron-down extensions-arrow arrow '></i>
+                            </div>
+                            <ul class="extensions-sub-menu sub-menu">
+                                <li><a href="#" id="item" data-li="wappalyzer">Wappalyzer</a></li>
+                                <!-- <li><a href="#" id="item" data-li="whatfont">Whatfont or Fount</a></li>
+                                <li><a href="#" id="item" data-li="perfectpixel">PerfectPixel</a></li>
+                                <li><a href="#" id="item" data-li="stylebot">Stylebot</a></li>
+                                <li><a href="#" id="item" data-li="css3gen">CSS3 Generator</a></li>
+                                <li><a href="#" id="item" data-li="responsive-design">Responsive Design</a></li> -->
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="side-bar-hidden side-bar-nav">
+                        <li>
+                            <div class="nav-iocn-link">
+                                <a href="#">Websites</a>
+                                <i class='bx bxs-chevron-down websites-arrow arrow '></i>
+                            </div>
+                            <ul class="websites-sub-menu sub-menu">
+                                <!-- <li><a href="#" id="item" data-li="stackoverflow">Stack Overflow</a></li>
+                                <li><a href="#" id="item" data-li="github">Github</a></li>
+                                <li><a href="#" id="item" data-li="freecodecamp">Freecodecamp</a></li> -->
+                                <li><a href="#" id="item" data-li="scrimba">Scrimba</a></li>
+                                <!-- <li><a href="#" id="item" data-li="w3school">W3School</a></li>
+                                <li><a href="#" id="item" data-li="frontendmentor">Frontend Mentor</a></li> -->
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="search-box button-hidden">
+                        <a href="#"><button class="test-btn">Take the Test</button></a>
+                    </div>
+                </ul>
+            </div>
+            <div class="search-box button-hidden-off">
+                <a href="#"><button class="test-btn">Take the Test</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="full-page">
+        <div class="sidebar">
+            <div class="logo-details">
+                <span class="logo_name">The Roothub</span>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                        <span class="link_name">Dashboard</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Category</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-collection'></i>
+                            <span class="link_name">Category</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Category</a></li>
+                        <li><a href="#" data-li="html" id="item">HTML</a></li>
+                        <li><a href="#" data-li="css" id="item">CSS</a></li>
+                        <li><a href="#" data-li="javascript" id="item">JavaScript</a></li>
+                        <li><a href="#" data-li="react" id="item">React</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-chip'></i>
+                            <span class="link_name">Cornerstones</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Cornerstones</a></li>
+                        <li><a href="#" id="item" data-li="wordpress">Wordpress</a></li>
+                        <li><a href="#" id="item" data-li="mamp">Mamp or Wampserver</a></li>
+                        <li><a href="#" id="item" data-li="git">GIT</a></li>
+                        <li><a href="#" id="item" data-li="vsc">Visual Studio Code</a></li>
+                        <li><a href="#" id="item" data-li="jquery">JQuery</a></li>
+                        <li><a href="#" id="item" data-li="bootstrap">Bootstrap</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bxs-data'></i>
+                            <span class="link_name">Applications</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Applications</a></li>
+                        <li><a href="#" id="item" data-li="atom">Atom</a></li>
+                        <!-- <li><a href="#" id="item" data-li="iterm2">Iterm2</a></li>
+                        <li><a href="#" id="item" data-li="evernote">Evernote</a></li>
+                        <li><a href="#" id="item" data-li="invision">Invision</a></li>
+                        <li><a href="#" id="item" data-li="flux">F.lux</a></li> -->
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-extension'></i>
+                            <span class="link_name">Extensions</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Extensions</a></li>
+                        <li><a href="#" id="item" data-li="wappalyzer">Wappalyzer</a></li>
+                        <!-- <li><a href="#" id="item" data-li="whatfont">Whatfont or Fount</a></li>
+                        <li><a href="#" id="item" data-li="perfectpixel">PerfectPixel</a></li>
+                        <li><a href="#" id="item" data-li="stylebot">Stylebot</a></li>
+                        <li><a href="#" id="item" data-li="css3gen">CSS3 Generator</a></li>
+                        <li><a href="#" id="item" data-li="responsive-design">Responsive Design</a></li> -->
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-sitemap'></i>
+                            <span class="link_name">Websites</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Websites</a></li>
+                        <!-- <li><a href="#" id="item" data-li="stackoverflow">Stack Overflow</a></li>
+                        <li><a href="#" id="item" data-li="github">Github</a></li>
+                        <li><a href="#" id="item" data-li="freecodecamp">Freecodecamp</a></li> -->
+                        <li><a href="#" id="item" data-li="scrimba">Scrimba</a></li>
+                        <!-- <li><a href="#" id="item" data-li="w3school">W3School</a></li>
+                        <li><a href="#" id="item" data-li="frontendmentor">Frontend Mentor</a></li> -->
                     </ul>
                 </li>
             </ul>
-        </nav>
-        <a href="#"><button class="test-btn">Take the Test</button></a>
-    </header>
+        </div>
+
+        <div class="home-section default-section">
+            <div class="default-page">
+                <h2>What Is Web Development and Why You Should Study It</h2>
+                <img class="img-responsive" src="images/what-is-web-development.jpg" alt="">
+                <p>Web development in simple terms means developing a website for the internet.</p>
+                <p>Various processes are involved when it comes to building a website and to get it up and running; like
+                    coding, programming or designing etc. Web development particularly deals with the coding or the
+                    programming side that enables a website to run and function properly.</p>
+                <p>It mainly revolves around the non-design aspect of creating a website.</p>
+                <p>If you are interested to <strong>study web development</strong>, you are at the right place! Together
+                    we will discuss the reasons why web development is becoming such a sought after career choice and
+                    why we think you have embarked on a right decision.</p>
+                <p>The computer powered revolution has left every area of society untouched which leaves businesses both
+                    big and small seeking to enter into the web arena. There is a surplus of opportunities for web
+                    developers to dominate!</p>
+            </div>
+        </div>
+
+        <div class="home-section default-section html" style="display: none;">
+            <div class="html-page">
+                <h1>HTML Basics</h1>
+                <p>HTML (<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage)
+                    is the code that is used to structure a web page and its content. For example, content could be
+                    structured within a set of paragraphs, a list of bulleted points, or using images and data tables.
+                    As the title suggests, this article will give you a basic understanding of HTML and its functions.
+                </p>
+                <section>
+                    <h2>So what is HTML?</h2>
+                    <p>HTML is a <em>markup language</em> that defines the structure of your content. HTML consists of a
+                        series of <strong><a href="/en-US/docs/Glossary/Element">elements</a></strong>, which you use to
+                        enclose, or wrap, different parts of the content to make it appear a certain way, or act a
+                        certain way. The enclosing <a href="/en-US/docs/Glossary/Tag">tags</a> can make a word or image
+                        hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so
+                        on. For example, take the following line of content:</p>
+                </section>
+                <section>
+                    <h3>Anatomy of an HTML element</h3>
+                    <p>Let's explore this paragraph element a bit further.</p>
+                    <p>
+                        <img src="/images/grumpy-cat-small.png" loading="lazy">
+                    </p>
+                    <p>The main parts of our element are as follows:</p>
+                    <ol>
+                        <li><strong>The opening tag:</strong> This consists of the name of the element (in this case,
+                            p), wrapped in opening and closing <strong>angle brackets</strong>. This states where the
+                            element begins or starts to take effect — in this case where the paragraph begins.</li>
+                        <li><strong>The closing tag:</strong> This is the same as the opening tag, except that it
+                            includes a <em>forward slash</em> before the element name. This states where the element
+                            ends — in this case where the paragraph ends. Failing to add a closing tag is one of the
+                            standard beginner errors and can lead to strange results.</li>
+                        <li><strong>The content:</strong> This is the content of the element, which in this case, is
+                            just text.</li>
+                        <li><strong>The element:</strong> The opening tag, the closing tag, and the content together
+                            comprise the element.</li>
+                    </ol>
+                    <p>Elements can also have attributes that look like the following:</p>
+                    <p>
+                        <img src="/images/grumpy-cat-attribute-small.png" loading="lazy">
+                    </p>
+                    <p>Attributes contain extra information about the element that you don't want to appear in the
+                        actual content. Here, <code>class</code> is the attribute <em>name</em> and
+                        <code>editor-note</code> is the attribute <em>value</em>. The <code>class</code> attribute
+                        allows you to give the element a non-unique identifier that can be used to target it (and any
+                        other elements with the same <code>class</code> value) with style information and other things.
+                    </p>
+                    <p>An attribute should always have the following:</p>
+                    <ol>
+                        <li>A space between it and the element name (or the previous attribute, if the element already
+                            has one or more attributes).</li>
+                        <li>The attribute name followed by an equal sign.</li>
+                        <li>The attribute value wrapped by opening and closing quotation marks.</li>
+                    </ol>
+                    <div class="notecard note" id="sect1">
+                        <p><strong>Note:</strong> Simple attribute values that don't contain ASCII whitespace (or any of
+                            the characters <code>"</code> <code>'</code> <code>`</code> <code>=</code> <code>&lt;</code>
+                            <code>&gt;</code> ) can remain unquoted, but it is recommended that you quote all attribute
+                            values, as it makes the code more consistent and understandable.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="home-section default-section css" style="display: none;">
+            <div class="css-page">
+                <h1>CSS basics</h1>
+                <p>CSS (Cascading Style Sheets) is the code that styles web content. <em>CSS basics</em> walks through
+                    what you need to get started. We'll answer questions like: How do I make text red? How do I make
+                    content display at a certain location in the (webpage) layout? How do I decorate my webpage with
+                    background images and colors?</p>
+                <section>
+                    <h2>What is CSS?</h2>
+                    <p>Like HTML, CSS is not a programming language. It's not a markup language either. <strong>CSS is a
+                            style sheet language.</strong> CSS is what you use to selectively style HTML elements. For
+                        example, this CSS selects paragraph text, setting the color to red:</p>
+                    <p>Let's try it out! Using a text editor, paste the three lines of CSS (above) into a new file. Save
+                        the file as <code>style.css</code> in a directory named <code>styles</code>.</p>
+                    <p>To make the code work, we still need to apply this CSS (above) to your HTML document. Otherwise,
+                        the styling won't change the appearance of the HTML. (If you haven't been following our project,
+                        pause here to read <a
+                            href="/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files">Dealing with
+                            files</a> and <a href="/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML
+                            basics</a>.)</p>
+                    <img src="/images/website-screenshot-styled.png">
+                    <p>
+                        If your paragraph text is red, congratulations! Your CSS is working.
+                    </p>
+                </section>
+                <section>
+                    <h3>Anatomy of a CSS ruleset</h3>
+                    <p>Let's dissect the CSS code for red paragraph text to understand how it works :</p>
+                    <p>
+                        <img src="/images/css-declaration-small.png">
+                    </p>
+                    <p>The whole structure is called a <strong>ruleset</strong>. (The term <em>ruleset</em> is often
+                        referred to as just <em>rule</em>.) Note the names of the individual parts:</p>
+                    <dl>
+                        <dt>Selector</dt>
+                        <dd>
+                            <p>This is the HTML element name at the start of the ruleset. It defines the element(s)
+                                to be styled (in this example, <a
+                                    href="/en-US/docs/Web/HTML/Element/p"><code>&lt;p&gt;</code></a> elements). To
+                                style a different element, change the selector.</p>
+                        </dd>
+                        <dt>Declaration</dt>
+                        <dd>
+                            <p>This is a single rule like <code>color: red;</code>. It specifies which of the
+                                element's <strong>properties</strong> you want to style.</p>
+                        </dd>
+                        <dt>Properties</dt>
+                        <dd>
+                            <p>These are ways in which you can style an HTML element. (In this example,
+                                <code>color</code> is a property of the <a
+                                    href="/en-US/docs/Web/HTML/Element/p"><code>&lt;p&gt;</code></a> elements.) In
+                                CSS, you choose which properties you want to affect in the rule.
+                            </p>
+                        </dd>
+                        <dt id="property_value">Property value</dt>
+                        <dd>
+                            <p>To the right of the property—after the colon—there is the <strong>property
+                                    value</strong>. This chooses one out of many possible appearances for a given
+                                property. (For example, there are many <code>color</code> values in addition to
+                                <code>red</code>.)
+                            </p>
+                        </dd>
+                    </dl>
+                    <p>Note the other important parts of the syntax:</p>
+                    <ul>
+                        <li>Apart from the selector, each ruleset must be wrapped in curly braces. (<code>{}</code>)
+                        </li>
+                        <li>Within each declaration, you must use a colon (<code>:</code>) to separate the property
+                            from its value or values.</li>
+                        <li>Within each ruleset, you must use a semicolon (<code>;</code>) to separate each
+                            declaration from the next one.</li>
+                    </ul>
+            </div>
+            </section>
+        </div>
+
+        <div class="home-section default-section javascript" style="display: none;">
+            <div class="javascript-page">
+                <h1>JavaScript basics</h1>
+                <p>
+                    JavaScript is a programming language that adds interactivity to your website. This happens in
+                    games, in the behavior of responses when buttons are pressed or with data entry on forms; with
+                    dynamic styling; with animation, etc.
+                    This article helps you get started with JavaScript and furthers your understanding of what is
+                    possible.
+                </p>
+                <section>
+                    <h2>What is JavaScript?</h2>
+                    <p>
+                        <a href="/en-US/docs/Glossary/JavaScript">JavaScript</a> is a powerful programming language
+                        that can add interactivity to a website.
+                        It was invented by Brendan Eich (co-founder of the Mozilla project, the Mozilla Foundation,
+                        and the Mozilla Corporation).
+                    </p>
+                    <p>
+                        JavaScript is versatile and beginner-friendly.
+                        With more experience, you'll be able to create games, animated 2D and 3D graphics,
+                        comprehensive database-driven apps, and much more!
+                    </p>
+                    <p>JavaScript itself is relatively compact, yet very flexible. Developers have written a variety
+                        of tools on top of the core JavaScript language, unlocking a vast amount of functionality
+                        with minimum effort. These include:</p>
+                    <ul>
+                        <li>Browser Application Programming Interfaces (<a href="/en-US/docs/Glossary/API">APIs</a>)
+                            built into web browsers, providing functionality such as dynamically creating HTML and
+                            setting CSS styles; collecting and manipulating a video stream from a user's webcam, or
+                            generating 3D graphics and audio samples.</li>
+                        <li>Third-party APIs that allow developers to incorporate functionality in sites from other
+                            content providers, such as Twitter or Facebook.</li>
+                        <li>Third-party frameworks and libraries that you can apply to HTML to accelerate the work
+                            of building sites and applications.</li>
+                    </ul>
+                    <p>It's outside the scope of this article—as a light introduction to JavaScript—to present the
+                        details of how the core JavaScript language is different from the tools listed above. You
+                        can learn more in MDN's <a href="/en-US/docs/Learn/JavaScript">JavaScript learning area</a>,
+                        as well as in other parts of MDN.</p>
+                    <p>The section below introduces some aspects of the core language and offers an opportunity to
+                        play with a few browser API features too. Have fun!</p>
+                </section>
+                <section>
+                    <h2>Language basics crash course</h2>
+                    <p>To give you a better understanding of how JavaScript works, let's explain some of the core
+                        features of the language. It's worth noting that these features are common to all
+                        programming languages. If you master these fundamentals, you have a head start on coding in
+                        other languages too!</p>
+                    <p><strong>Warning:</strong> In this article, try entering the example code lines into your
+                        JavaScript console to see what happens. For more details on JavaScript consoles, see <a
+                            href="/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">Discover
+                            browser developer tools</a>.</p>
+                </section>
+                <section>
+                    <h3>Variables</h3>
+                    <p><a href="/en-US/docs/Glossary/Variable">Variables</a> are containers that store values. You
+                        start by declaring a variable with the <a
+                            href="/en-US/docs/Web/JavaScript/Reference/Statements/let"><code>let</code></a> keyword,
+                        followed by the name you give to the variable:</p>
+                    <p>A semicolon at the end of a line indicates where a statement ends. It is only required when
+                        you need to separate statements on a single line. However, some people believe it's good
+                        practice to have semicolons at the end of each statement. There are other rules for when you
+                        should and shouldn't use semicolons. For more details, see <a
+                            href="https://www.codecademy.com/resources/blog/your-guide-to-semicolons-in-javascript/"
+                            class="external" rel=" noopener">Your Guide to Semicolons in JavaScript</a>.</p>
+                    <p>You can name a variable nearly anything, but there are some restrictions. (See <a
+                            href="/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variables">this section about
+                            naming rules</a>.) If you are unsure, you can <a href="https://mothereff.in/js-variables"
+                            class="external" rel=" noopener">check your
+                            variable name</a> to see if it's valid.</p>
+                    <p>JavaScript is case sensitive. This means <code>myVariable</code> is not the same as
+                        <code>myvariable</code>. If you have problems in your code, check the case!
+                    </p>
+                    <p>Note that variables may hold values that have different <a
+                            href="/en-US/docs/Web/JavaScript/Data_structures">data types</a>:</p>
+                    <p>So why do we need variables? Variables are necessary to do anything interesting in
+                        programming. If values couldn't change, then you couldn't do anything dynamic, like
+                        personalize a greeting message or change an image displayed in an image gallery.</p>
+                </section>
+                <section>
+                    <h3>Comments</h3>
+                    <p>Comments are snippets of text that can be added along with code. The browser ignores text
+                        marked as comments. You can write comments in JavaScript just as you can in CSS:</p>
+                    <div class="code-example">
+                        <pre class="brush: js notranslate"><code><span class="token comment">/*
+                                    Everything in between is a comment.
+                                    */</span>
+                                    </code></pre><button type="button" class="icon copy-icon"><span
+                                class="visually-hidden">Copy to Clipboard</span></button><span
+                            class="copy-icon-message visually-hidden" role="alert" style="top: 52px;"></span>
+                    </div>
+                    <p>If your comment contains no line breaks, it's an option to put it behind two slashes like
+                        this:</p>
+                    <div class="code-example">
+                        <pre class="brush: js notranslate"><code><span class="token comment">// This is a comment</span>
+                                    </code></pre><button type="button" class="icon copy-icon"><span
+                                class="visually-hidden">Copy to Clipboard</span></button><span
+                            class="copy-icon-message visually-hidden" role="alert" style="top: 52px;"></span>
+                    </div>
+            </div>
+            </section>
+            <section>
+                <h3>Conditionals</h3>
+                <p>Conditionals are code structures used to test if an expression returns true or not. A very
+                    common form of conditionals is the <code>if ... else</code> statement. For example:</p>
+                <div class="code-example">
+                    <pre class="brush: js notranslate"><code><span class="token keyword">let</span> iceCream <span class="token operator">=</span> <span class="token string">'chocolate'</span><span class="token punctuation">;</span>
+                                            <span class="token keyword">if</span><span class="token punctuation">(</span>iceCream <span class="token operator">===</span> <span class="token string">'chocolate'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                                              <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Yay, I love chocolate ice cream!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                                              <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Awwww, but chocolate is my favorite...'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                            <span class="token punctuation">}</span>
+                                            </code></pre><button type="button" class="icon copy-icon"><span
+                            class="visually-hidden">Copy to Clipboard</span></button><span
+                        class="copy-icon-message visually-hidden" role="alert" style="top: 52px;"></span>
+                </div>
+                <p>The expression inside the <code>if( ... )</code> is the test. This uses the strict equality
+                    operator (as described above) to compare the variable <code>iceCream</code> with the string
+                    <code>chocolate</code> to see if the two are equal. If this comparison returns
+                    <code>true</code>, the first block of code runs. If the comparison is not true, the second
+                    block of code—after the <code>else</code> statement—runs instead.
+                </p>
+            </section>
+        </div>
+
+        <div class="home-section default-section react" style="display: none;">
+            <div class="react-page">
+                <h1>Getting started with React</h1>
+                <p>In this article we will say hello to React. We'll discover a little bit of detail about its
+                    background and use cases, set up a basic React toolchain on our local computer, and create and play
+                    with a simple starter app — learning a bit about how React works in the process.</p>
+                <section>
+                    <h2>Hello React</h2>
+                    <p>As its official tagline states, <a href="https://reactjs.org/" class="external"
+                            rel=" noopener">React</a> is a library for building user interfaces. React is not a
+                        framework – it's not even exclusive to the web. It's used with other libraries to render to
+                        certain environments. For instance, <a href="https://reactnative.dev/" class="external"
+                            rel=" noopener">React Native</a> can be used to build mobile applications.</p>
+                    <p>To build for the web, developers use React in tandem with <a
+                            href="https://reactjs.org/docs/react-dom.html" class="external"
+                            rel=" noopener">ReactDOM</a>. React and ReactDOM are often discussed in the same spaces
+                        as — and utilized to solve the same problems as — other true web development frameworks.
+                        When we refer to React as a "framework", we're working with that colloquial understanding.
+                    </p>
+                    <p>React's primary goal is to minimize the bugs that occur when developers are building UIs. It
+                        does this through the use of components — self-contained, logical pieces of code that
+                        describe a portion of the user interface. These components can be composed together to
+                        create a full UI, and React abstracts away much of the rendering work, leaving you to
+                        concentrate on the UI design.</p>
+                </section>
+                <section>
+                    <h2>Use cases</h2>
+                    <p>Unlike the other frameworks covered in this module, React does not enforce strict rules
+                        around code conventions or file organization. This allows teams to set conventions that work
+                        best for them, and to adopt React in any way they would like to. React can handle a single
+                        button, a few pieces of an interface, or an app's entire user interface.</p>
+                    <p>While React <em>can</em> be used for <a
+                            href="https://reactjs.org/docs/add-react-to-a-website.html" class="external"
+                            rel=" noopener">small pieces of an interface</a>, it's not as easy to "drop into" an
+                        application as a library like jQuery, or even a framework like Vue — it is more approachable
+                        when you build your entire app with React.</p>
+                    <p>In addition, many of the developer-experience benefits of a React app, such as writing
+                        interfaces with JSX, require a compilation process. Adding a compiler like Babel to a
+                        website makes the code on it run slowly, so developers often set up such tooling with a
+                        build step. React arguably has a heavy tooling requirement, but it can be learned.</p>
+                    <p>This article is going to focus on the use case of using React to render the entire user
+                        interface of an application, using tooling provided by Facebook's own <a
+                            href="https://create-react-app.dev/" class="external" rel=" noopener">create-react-app</a>
+                        tool.</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="home-section default-section wordpress" style="display: none;">
+            <div class="wordpress-page">
+                <h1>Wordpress Introduction</h1>
+                <p>WordPress provides the most amazing way of creating websites and
+                    blogs. More than 34% of the websites are built using WordPress. So,
+                    it can be said that this popular content management system is
+                    famous for developing blogging sites and websites. Today, WordPress
+                    has proudly brought the most supportive and useful blogging
+                    community on the web. Thousands of sites (news, updates, resources,
+                    training, tutorials— the list is endless) exists which inherit and
+                    make use of WordPress. In this chapter, you will learn about the
+                    primary purpose of WordPress and its types and features.</p>
+                <h2>What is WordPress?</h2>
+                <p>WordPress can be defined as an open-source CMS that has been
+                    licensed under GPLv2. It means anyone has the right to use as well
+                    as modify the WordPress software for free. It can be considered as
+                    a tool that makes the life of content publishers easy to manage an
+                    essential portion of the website like website content, and
+                    multimedia files in web pages without having prior knowledge of web
+                    programming. The ultimate result is that WordPress helps develop
+                    and build a website handy for anyone, even without the skill set of
+                    a developer.</p>
+                <h3>Features of WordPress</h3>
+                <p>WordPress is considered to be the most popular content
+                    management system due to its characteristics.</p>
+                <ul>
+                    <li>WordPress is free and an open-source platform under the GNU
+                        General Public License (GPL).</li>
+                    <li>Design themes customization in WordPress is
+                        straightforward.</li>
+                    <li>It allows you to manage users with different roles and
+                        permissions.</li>
+                    <li>WordPress media management is quick and easy to use.</li>
+                    <li>WordPress provides WYSIWYG editor to manage your text content,
+                        which is very useful for manipulating the layout of the
+                        document.</li>
+                </ul>
+                <h3>WordPress.com and WordPress.org</h3>
+                <p>The two ways through which WordPress allows you to host a site
+                    is by WordPress.com and WordPress.org. The primary thing which
+                    varies with these two approaches is the real host. By making use of
+                    WordPress.org, you might download the script free of charge and
+                    host it on a local machine or in any server. Byt, in case of
+                    WordPress.com, it takes care of every aspect, right form hosting
+                    the site for you to providing features for managing the content.
+                    You don't have to organize a web server or pay for hosting or even
+                    download any application, but yes, ads will be shown on your
+                    site.</p>
+                <h3>Pros and Cons of WordPress.org and WordPress.com</h3>
+                <p>If you are not paying any interest in hosting or managing a web
+                    server, then WordPress.com is a way to go. This is because
+                    WordPress.com is free, and setup can be done quickly and easily.
+                    However, it will charge you to remove the term WordPress which will
+                    be included in the URL as well as you will not be competent enough
+                    to upload custom themes and plugins without having a prior payment
+                    for the services. You also cannot edit or modify the backend PHP
+                    code.</p>
+                <p>WordPress.org is a self-hosted version and provides additional
+                    flexibility with control on your site. Your self bought domain name
+                    can be used, and themes can be uploaded, plugins can be
+                    incorporated. Hence, this gives flexibility and custom control to
+                    your web development.</p>
+            </div>
+        </div>
+
+        <div class="home-section default-section mamp" style="display: none;">
+            <div class="mamp-page">
+                <h1>What Is WAMP</h1>
+                <p><strong>WAMP</strong> is an acronym that stands for Windows, Apache, MySQL, and PHP. It’s a software
+                    stack which means installing WAMP installs <a href="/tutorials/what-is-apache">Apache</a>, <a
+                        href="/tutorials/what-is-mysql">MySQL</a>, and PHP on your operating system (Windows in
+                    the case of WAMP). Even though you can install them separately, they are usually bundled up, and for
+                    a good reason too.</p>
+                <p>What’s good to know is that WAMP derives from <a
+                        href="/tutorials/how-to-install-lamp-ubuntu-16-04">LAMP</a> (the L stands for Linux). The only
+                    difference
+                    between these two is that WAMP is used for Windows, while LAMP – for Linux based operating systems.
+                </p>
+                <p>Let’s quickly go over what each letter represents:</p>
+                <ol>
+                    <li>“<strong>W</strong>” stands for Windows, there’s also LAMP (for Linux) and MAMP (for Mac).</li>
+                    <li>“<strong>A</strong>” stands for Apache. Apache is the server software that is responsible for
+                        serving web pages. When you request a page to be seen by you, Apache grants your request over
+                        HTTP and shows you the site.</li>
+                    <li>“<strong>M</strong>” stands for MySQL. MySQL’s job is to be the database management system for
+                        your server. It stores all of the relevant information like your site’s content, user profiles,
+                        etc.</li>
+                    <li>“<strong>P</strong>” stands for PHP. It’s the programming language that was used to write
+                        WordPress. It acts like glue for this whole software stack. PHP is running in conjunction with
+                        Apache and communicating with MySQL.</li>
+                </ol>
+                <p>Instead of installing and testing WordPress on your&nbsp;<a href="/web-hosting">hosting account</a>,
+                    you can do it on your personal
+                    computer (localhost).</p>
+                <p>WAMP acts like a virtual server on your computer. It allows you to test all WordPress features
+                    without any consequences since it’s localized on your machine and is not connected to the web.</p>
+                <p>First of all, this means that you don’t need to wait until files are uploaded to your site, and
+                    secondly – this makes creating backups much easier.</p>
+                <p>WAMP speeds up the work process for both developers and theme designers alike. What is more, you also
+                    get the benefit of playing around with your site to your heart’s content.</p>
+                <p>However, to actually make the website go live, you need to get some form of hosting service and a
+                    Domain. See our beginner-friendly article about <a href="/tutorials/what-is-web-hosting/">web
+                        hosting</a> for
+                    more information.</p>
+                <p>In essence, WAMP is used as a safe space to work on your website, without needing to actually host it
+                    online.</p>
+                <p>WAMP also has a control panel. Once you install the software package, all of the services mentioned
+                    above (excluding the operating system that is) will be installed on your local machine.</p>
+                <p>Whether you use WAMP or software packages for the other operating systems, it’s a great way to save
+                    time. You won’t have to upload files to a site and will be able to learn how to develop in a safe
+                    and care-free environment.</p>
+                <p>You can download WAMP <a href="http://www.wampserver.com/en/">here</a>.</p>
+            </div>
+        </div>
+
+        <div class="home-section default-section git" style="display: none;">
+            <div class="git-page">
+                <h1>An introduction to Git: what it is, and how to use it</h1>
+                <section>
+                    <p>Git is an <strong>Open Source Distributed Version Control System</strong>. Now that’s a
+                        lot of words to define Git.</p>
+                    <p>Let me break it down and explain the wording:</p>
+                    <ul>
+                        <li><strong>Control System:</strong> This basically means that Git is a content tracker.
+                            So Git can be used to store content — it is mostly used to store code due to the
+                            other features it provides.</li>
+                        <li><strong>Version Control System</strong>: The code which is stored in Git keeps
+                            changing as more code is added. Also, many developers can add code in parallel. So
+                            Version Control System helps in handling this by maintaining a history of what
+                            changes have happened. Also, Git provides features like branches and merges, which I
+                            will be covering later.</li>
+                        <li><strong>Distributed Version Control System</strong>: Git has a remote repository
+                            which is stored in a server and a local repository which is stored in the computer
+                            of each developer. This means that the code is not just stored in a central server,
+                            but the full copy of the code is present in all the developers’ computers. Git is a
+                            Distributed Version Control System since the code is present in every developer’s
+                            computer. I will explain the concept of remote and local repositories later in this
+                            article.</li>
+                    </ul>
+                    <h3>Why a Version Control System like Git is needed</h3>
+                    <p>Real life projects generally have multiple developers working in parallel. So a version
+                        control system like Git is needed to ensure there are no code conflicts between the
+                        developers.</p>
+                    <p>Additionally, the requirements in such projects change often. So a version control system
+                        allows developers to revert and go back to an older version of the code.</p>
+                    <p>Finally, sometimes several projects which are being run in parallel involve the same
+                        codebase. In such a case, the concept of branching in Git is very important.</p>
+                    <h3>Let’s get started on using Git now</h3>
+                    <p>Rather than mentioning all the concepts at once, I will explain the concepts of Git
+                        through an example so that it is easier to follow.</p>
+                    <h4>Download git</h4>
+                    <p>This link has details on how to install Git in multiple operating systems:<br><a
+                            href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a>
+                    </p>
+                    <p>Verify if Git is installed by using the following command in the command prompt:</p>
+                    <pre class=" language-bash"><code class=" language-bash">git --version</code></pre>
+                    <h4 id="create-your-local-git-repository">Create your local Git repository</h4>
+                    <p>In your computer, create a folder for your project. Let’s call the project folder
+                        <code>simple-git-demo</code>.
+                    </p>
+                    <p>Go into your project folder and add a local Git repository to the project using the
+                        following commands:</p>
+                    <pre class=" language-bash"><code class=" language-bash">cd simple-git-demo git init</code></pre>
+                    <p>The <code>git init</code> command adds a local Git repository to the project.</p>
+                    <h4 id="let-s-add-some-small-code-now">Let’s Add some Small Code now</h4>
+                    <p>Create a file called <code>demo.txt</code> in the project folder and add the following
+                        text into it:</p>
+                    <pre><code>Initial Content</code></pre>
+                    <p>Here we will be demoing with just plain text instead of actual code, since the main focus
+                        of this article is on Git and not on any specific programming language.</p>
+                    <h3 id="staging-and-committing-the-code">Staging and Committing the code</h3>
+                    <p>Committing is the process in which the code is added to the <strong>local
+                            repository</strong>. Before committing the code, it has to be in the <strong>staging
+                            area</strong>. The staging area is there to keep track of all the files which are to
+                        be committed.</p>
+                    <p>Any file which is not added to the staging area will not be committed. This gives the
+                        developer control over which files need to be committed.</p>
+                    <h4 id="staging">Staging</h4>
+                    <p>Use the following command for staging the file:</p>
+                    <pre class=" language-bash"><code class=" language-bash">git add demo.txt</code></pre>
+                    <p>In case you want to add multiple files you can use:</p>
+                    <p><code>git add file1 file2 file3</code></p>
+                    <p>If you want to add all the files inside your project folder to the staging area, use the
+                        following command:</p>
+                    <pre class=" language-bash"><code class=" language-bash">git add .</code></pre>
+                    <p>Use this carefully since it adds all the files and folders in your project to the staging
+                        area.</p>
+                    <h4 id="committing">Committing</h4>
+                    <p>Use the following command to commit the file:</p>
+                    <pre class=" language-bash"><code class=" language-bash">git commit -m "Initial Commit"</code></pre>
+                    <p>“Initial Commit” is the commit message here. Enter a relevant commit message to indicate
+                        what code changes were done in that particular commit.</p>
+                    <h3 id="git-status-and-git-log">Git Status and Git Log</h3>
+                    <p>Now modify the <code>demo.txt</code><strong> </strong>file and add the following snippet:
+                    </p>
+                    <pre><code>Initial Content Adding more Content</code></pre>
+                    <h4 id="status">Status</h4>
+                    <p>Use <code>git status</code> to find out information regarding what files are modified and
+                        what files are there in the staging area — it shows other information as well, which we
+                        can ignore for now.</p>
+                    <p>Use the following command to see the status:</p>
+                    <pre class=" language-bash"><code class=" language-bash">git status</code></pre>
+                    <p>The status shows that <code>demo.txt</code> is modified and is not yet in the staging
+                        area.</p>
+                    <p>Now let us add <code>demo.txt</code> to the staging area and commit it using the
+                        following commands:</p>
+                    <pre
+                        class=" language-bash"><code class=" language-bash">git add demo.txt git commit -m "demo.txt file is modified"</code></pre>
+                    <h3 id="log">Log</h3>
+                    <p>Use <code>git log</code> to print out all the commits which have been done up until now.
+                    </p>
+                    <p>The command used for this is:<br><code>git log</code></p>
+                    <p>The log shows the author of each commit, the date of the commit, and the commit message.
+                    </p>
+                    <h3 id="branches">Branches</h3>
+                    <p>Up until now we have not created any branch in Git. By default, Git commits go into the
+                        <strong>master</strong> branch.
+                    </p>
+                    <h4 id="what-is-a-branch">What is a branch?</h4>
+                    <p>A branch is nothing but a pointer to the latest commit in the Git repository. So
+                        currently our master branch is a pointer to the second commit
+                        <code>“demo.txt file is modified”</code>.
+                    </p>
+                    <h4 id="why-are-multiple-branches-needed">Why are multiple branches needed?</h4>
+                    <p>Multiple branches are needed to support multiple parallel developments. Refer the image
+                        below to see how branches work.</p>
+                    <figure class="kg-card kg-image-card"><img
+                            src="https://cdn-media-1.freecodecamp.org/images/sww3mboJ61C4kpLWlQYHnHWvrjX8p--VMui2">
+                    </figure>
+                    <p>Initially, commit 1 and commit 2 were done in the master branch. After commit 2 a new
+                        Branch called as “Test” is created, and commit 3 and commit 4 are added to the test
+                        branch.</p>
+                    <p>At the same time, a different commit 3 and commit 4 are added to the master branch. Here
+                        we can see that after Commit 2, two parallel developments are being done in 2 separate
+                        branches.</p>
+                    <p>The Test Branch and the Master Branch have diverged here and have different code — the
+                        code from Test Branch can be merged with the Master branch using <code>git merge</code>.
+                        This will be covered later.</p>
+                    <h4 id="create-a-new-branch-in-local">Create a New Branch in Local</h4>
+                    <p>Create a new branch called <strong>test</strong> using the following command:</p>
+                    <pre class=" language-bash"><code class=" language-bash">git branch test</code></pre>
+                    <p>This command creates the <code>test</code> branch.</p>
+                    <p>We are still in the context of the master branch. In order to switch to the
+                        <code>test </code>branch. use the following command:
+                    </p>
+                    <pre class=" language-bash"><code class=" language-bash">git checkout test</code></pre>
+                    <p>Now we are in the <code>test</code> branch.</p>
+                    <p>You can list out all the branches in local using the following command:</p>
+                    <pre class=" language-bash"><code class=" language-bash">git branch</code></pre>
+                    <h4 id="do-some-commits-in-the-new-branch">Do Some Commits in the New Branch</h4>
+                    <p>Modify <code>demo.txt</code> by adding the following snippet:</p>
+                    <pre><code>Initial Content Adding more Content Adding some Content from test Branch</code></pre>
+                    <p>Now stage and commit using the following commands:</p>
+                    <pre
+                        class=" language-bash"><code class=" language-bash">git add demo.txt git commit -m "Test Branch Commit"</code></pre>
+                    <p>This commit was done in the Test Branch, and now Test Branch is ahead of Master Branch by
+                        1 commit — as the test branch also includes the 2 commits from the master branch.</p>
+                    <p>You can verify the commit history in Test Branch using:</p>
+                    <pre class=" language-bash"><code class=" language-bash">git log</code></pre>
+                    <h3 id="merging">Merging</h3>
+                    <p>Currently, Test Branch is ahead of the Master by 1 commit. Let’s say that now we want all
+                        the code in the Test Branch to be brought back to the Master Branch. This is where
+                        <code>git merge</code> is very useful.
+                    </p>
+                    <p>In order to merge the code from the test branch into the master branch, follow these
+                        steps:</p>
+                    <p>First go back to the master branch:</p>
+                    <pre class=" language-bash"><code class=" language-bash">git checkout master</code></pre>
+                    <p>Then run the <code>merge</code> command:</p>
+                    <pre class=" language-bash"><code class=" language-bash">git merge test</code></pre>
+                    <p>After running these 2 commands, the merge should be successful. In this example, there
+                        are no conflicts.</p>
+                    <p>But in real projects, there will be conflicts when a merge is being done. Resolving the
+                        conflict is something which comes with experience, so as you work more with Git you will
+                        be able to get the hang of resolving conflicts.</p>
+                    <p>Run <code>git log</code><strong> </strong>now and you will notice that the master also
+                        has 3 commits.</p>
+                    <h3 id="the-remote-git-repository">The Remote Git Repository</h3>
+                    <p>Until now, we have been working only in the local repository. Each developer will work in
+                        their local repository but eventually, they will push the code into a remote repository.
+                        Once the code is in the remote repository, other developers can see and modify that
+                        code.</p>
+                    <figure class="kg-card kg-image-card kg-card-hascaption"><img
+                            src="https://cdn-media-1.freecodecamp.org/images/O-6UdGYVsEjM-oJmtJ5KQpQnXIBOCZoB22X1"
+                            class="kg-image" alt="O-6UdGYVsEjM-oJmtJ5KQpQnXIBOCZoB22X1" width="800" height="265"
+                            loading="lazy">
+                        <figcaption>Showing Remote and Local Repositories</figcaption>
+                    </figure>
+                    <h4>GitHub</h4>
+                    <p>Here we will be using GitHub for the remote repository.</p>
+                    <p>Go to <a href="https://github.com/" rel="noopener">https://github.com/</a> and create an
+                        account.</p>
+                    <p>After registering in the GitHub homepage, click on <strong>Start a Project</strong> to
+                        create a new Git repository. Give the repository a name and click “Create Repository”
+                    </p>
+                    <p>Give the name as <code>git-blog-demo</code>.</p>
+                    <p>This will create a remote repository in GitHub, and when you open the repository, a page
+                        like the image below will open up:</p>
+                    <figure class="kg-card kg-image-card"><img
+                            src="https://cdn-media-1.freecodecamp.org/images/LWpWCg5LTo7m-IkZW1io-194VWZ61di5CIGY"
+                            class="kg-image" alt="LWpWCg5LTo7m-IkZW1io-194VWZ61di5CIGY" width="800" height="189"
+                            loading="lazy"></figure>
+                    <p>The repository URL is the highlighted portion
+                        <code><strong>https://github.com/aditya-sridhar/git-blog-demo.git</strong></code>
+                    </p>
+                    <p>In order to point your local repository to the remote repository, use the following
+                        command:</p>
+                    <pre
+                        class=" language-bash"><code class=" language-bash">git remote add origin [repository url]</code></pre>
+                    <h4 id="git-push"><strong>Git Push</strong></h4>
+                    <p>In order to push all the code from the local repository into the remote repository, use
+                        the following command:</p>
+                    <pre class=" language-bash"><code class=" language-bash">git push -u origin master</code></pre>
+                    <p>This pushes the code from the master branch in the local repository to the master branch
+                        in the remote repository.</p>
+                    <h3 id="additional-commands">Additional Commands</h3>
+                    <h4 id="git-pull">Git Pull</h4>
+                    <p><code>git pull</code> is used to pull the latest changes from the remote repository into
+                        the local repository. The remote repository code is updated continuously by various
+                        developers, hence <code>git pull </code>is necessary:</p>
+                    <pre class=" language-bash"><code class=" language-bash">git pull origin master</code></pre>
+                    <h4 id="git-clone">Git Clone</h4>
+                    <p><code>git clone</code> is used to clone an existing remote repository into your computer.
+                        The command for this is:</p>
+                    <pre class=" language-bash"><code class=" language-bash">git clone [repository url]</code></pre>
+                    <h3 id="congrats">Congrats</h3>
+                    <p>Now you know the basics of how to use Git, so go ahead and explore more!</p>
+                    <p>I will soon be publishing one more article on slightly more advanced concepts of Git.
+                        Stay tuned!</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="home-section default-section vsc" style="display: none;">
+            <div class="vsc-page">
+                <h1>Introduction to Visual Studio Code</h1>
+                <p>Visual Studio Code is a code editor in layman’s terms. Visual Studio Code is “a free-editor that
+                    helps the
+                    programmer write code, helps in debugging and corrects the code using the intelli-sense method ”. In
+                    normal
+                    terms, it facilitates users to write the code in an easy manner. Many people say that it is half of
+                    an IDE
+                    and an editor, but the decision is up to to the coders. Any program/software that we see or use
+                    works on the
+                    code that runs in the background. Traditionally coding was used to do in the traditional editors or
+                    even in
+                    the basic editors like notepad! These editors used to provide basic support to the coders.</p>
+                <p>Some of them were so basic that it was very difficult in writing basic English level programs in
+                    them. As
+                    time went by, some programming languages needed a specific framework and support for further coding
+                    and
+                    development it, which was not possible using these editors. VI Editor, Sublime Text Editor, is one
+                    of the
+                    many kinds of editors that came into existence. The most prominent and which supports almost every
+                    coding
+                    language is VISUAL STUDIO CODE. Its features let the user modify the editor as per the usage, which
+                    means
+                    the user is able to download the libraries from the internet and integrate it with the code as per
+                    his
+                    requirements.</p>
+                <h3>What can Visual Studio Code do?</h3>
+                <p>Visual Studio Code has some very unique features. They are listed as below :</p>
+                <ul>
+                    <li><strong>Support for multiple programming languages: </strong>Supports multiple programming
+                        languages. So
+                        earlier, programmers needed Web-Support: a different editor for different languages, but it has
+                        built-in
+                        multi-language support. This also means it easily detects if there’s any fault or cross-language
+                        reference, it’ll be able to detect it easily.</li>
+                </ul>
+                <ul>
+                    <li><strong>Intelli-Sense: </strong>It can detect if any snippet of code is left incomplete. Also,
+                        common
+                        variable syntaxes and variable declarations are made automatically. Ex: If a certain variable is
+                        being
+                        used in the program and the user has forgotten to declare, intelli-sense will declare it for the
+                        user.
+                    </li>
+                </ul>
+                <ul>
+                    <li><strong>Cross-Platform Support: </strong>Traditionally, editors used to support either <a
+                            href="https://www.educba.com/linux-vs-mac-vs-windows/">Windows or Linux or Mac Systems</a>.
+                        But
+                        Visual Studio Code is cross-platform. So it can work on all three platforms. Also, the code
+                        works on all
+                        three platforms; else, the open-source and proprietary software codes used to be different.</li>
+                </ul>
+                <ul>
+                    <li><strong>Extensions and Support: </strong>Usually supports all the programming languages but, if
+                        the
+                        user/programmer wants to use the programming language which is not supported then, he can
+                        download the
+                        extension and use it. And performance-wise, the extension doesn’t slow down the editor as it
+                        rums as a
+                        different process.</li>
+                </ul>
+                <ul>
+                    <li><strong>Repository: </strong>With the ever-increasing demand for the code, secure and timely
+                        storage is
+                        equally important. It is <a href="https://www.educba.com/git-alternatives/">connected with
+                            Git</a> or
+                        can be connected with any other repository for pulling or saving the instances.</li>
+                </ul>
+                <ul>
+                    <li><strong>Web-Support: </strong>Comes with built-in support for Web applications. So web
+                        applications can
+                        be built and supported in VSC.</li>
+                </ul>
+                <h3>Advantages and Why should we use Visual Studio Code</h3>
+                <p>There are many advantages over any other IDE; they are as follow:</p>
+                <p>1. Cross-platform support :</p>
+                <ul>
+                    <li>Windows</li>
+                    <li>Linux</li>
+                    <li>Mac</li>
+                </ul>
+                <p>2. Light-weight</p>
+                <p>3. Robust Architecture</p>
+                <p>4. Intelli-Sense</p>
+                <p>5. Freeware: Free of Cost- probably the best feature of all for all the programmers out there, even
+                    more for
+                    the organizations.</p>
+                <p>6. Many users will use it or might have used it for desktop applications only, but it also provides
+                    great
+                    tool support for Web Technologies like; HTML, CSS, JSON.</p>
+                <p>There are a few things that one can find a bit odd compared with so many features. It mainly helps
+                    the
+                    front-end developers as compared with the back-end developers. But as per some user’s opinions, it
+                    is
+                    equally helpful. It supports most of the languages used by most of the programmers, but other
+                    languages
+                    might have to download, or extensions may have to be used for them. Along with this common zoom-in,
+                    zoom-out
+                    brightness, theme selection features too are made available.</p>
+                <h3>Visual Studio Scope</h3>
+                <p>The most common languages are :</p>
+                <ul>
+                    <li>C#</li>
+                    <li>Visual Basic</li>
+                    <li>Java-Script</li>
+                    <li>R</li>
+                    <li>XML</li>
+                    <li>Python</li>
+                    <li>CSS</li>
+                    <li>GO</li>
+                    <li>PERL</li>
+                </ul>
+                <p>Another feature that naïve-users or anyone can see instantly different from other editors is the
+                    user-friendliness of the Visual Studio Code. The usability is very easy to handle. The file is
+                    arranged
+                    hierarchically and has regular software like a toolbar, status bar, and a sidebar. It also has a
+                    floating
+                    windows explorer window, which can be fixed at one place according to convenience, which consists of
+                    the
+                    directory structure of files. These files (code files, image folders, etc.) can be opened or renamed
+                    from
+                    here, and changes will automatically get reflected in the storage.</p>
+                <h3>Why do we need Visual Studio Code?</h3>
+                <p>Till recent times, there’s hardly been an IDE or code editor that has been so user-friendly that even
+                    first-time users can use each and every feature without any hassles. The coding-friendly feature and
+                    code
+                    error recognition also helps users a long way into making the code more efficient and error-less.
+                </p>
+                <h3>How will this technology help you in career growth?</h3>
+                <p>With new and emerging technologies, and new frameworks being used by the software, this brings into
+                    play a
+                    great variety of code effectiveness. These emerging technologies are a sure thing that is to be
+                    added into
+                    the Visual Studio Code and its extensions. The developers, testers, data administrators, both old
+                    and
+                    newbies, can equally use it, and that too very effectively. The people who are into this industry
+                    might find
+                    it a bit tough to learn this new technology, considering their use of more manual modes of code
+                    logic.</p>
+                <h3>Conclusion</h3>
+                <p>With advancements in technology day-by-day, Visual Studio Code is going to play a pivotal role in the
+                    development of software. With its ever-evolving features and soon-to-be-added new settings, which
+                    will
+                    enable users to work with it from anywhere, it is certainly “THE THING” to keep one ahead of
+                    everyone in
+                    this ever-increasing IT market.</p>
+            </div>
+        </div>
+
+        <div class="home-section default-section jquery" style="display: none;">
+            <div class="jquery-page">
+                <h1>jQuery | Introduction</h1>
+                <p><strong>jQuery </strong>is an open source JavaScript library that simplifies the interactions
+                    between an HTML/CSS document, or more precisely the Document Object Model (DOM), and
+                    JavaScript.<br>Elaborating the terms, jQuery simplifies HTML document traversing and
+                    manipulation, browser event handling, DOM animations, Ajax interactions, and cross-browser
+                    JavaScript development.<br><img
+                        src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/jquery-banner.png"
+                        alt=""><br><b>Note:</b> The only library available today that meets the needs of both
+                    designer types and programmer types is jQuery.</p>
+                <p>jQuery is widely famous with its philosophy of <strong>“Write less, do more.”</strong> This
+                    philosophy can be further elaborated as three concepts:</p>
+                <ul>
+                    <li>Finding some elements (via CSS selectors) and doing something with them (via jQuery methods)
+                        i.e. locate a set of elements in the DOM, and then do something with that set of elements.
+                    </li>
+                    <li>Chaining multiple jQuery methods on a set of elements</li>
+                    <li>Using the jQuery wrapper and implicit iteration</li>
+                </ul>
+                <p><u><strong>Using jQuery (JS) library on HTML page</strong></u><br>There are several ways to start
+                    using jQuery on your web site.</p>
+                <ol>
+                    <li>Use the Google-hosted/ Microsoft-hosted content delivery network (CDN) to include a version
+                        of jQuery.</li>
+                    <li>Download own version of jQuery from jQuery.com and host it on own server or local
+                        filesystem.</li>
+                </ol>
+                <p><b>Note:</b> All jQuery methods are inside a document-ready event to prevent any jQuery code from
+                    running before the document is finished loading (is ready).</p>
+                <p><b>Why jQuery?</b><br>Some of the key points which support the answer for why to use jQuery:</p>
+                <ul>
+                    <li>It is incredibly popular, which is to say it has a large community of users and a healthy
+                        amount of contributors who participate as developers and evangelists.</li>
+                    <li>It normalizes the differences between web browsers so that you don’t have to.</li>
+                    <li>It is intentionally a lightweight footprint with a simple yet clever plugin architecture.
+                    </li>
+                    <li>Its repository of plugins is vast and has seen steady growth since jQuery’s release.</li>
+                    <li>Its API is fully documented, including inline code examples, which in the world of
+                        JavaScript libraries is a luxury. Heck, any documentation at all was a luxury for years.
+                    </li>
+                    <li>It is friendly, which is to say it provides helpful ways to avoid conflicts with other
+                        JavaScript libraries.</li>
+                </ul>
+                <p><b>Advantages:</b></p>
+                <ul>
+                    <li>Wide range of plug-ins. jQuery allows developers to create plug-ins on top of the JavaScript
+                        library.</li>
+                    <li>Large development community</li>
+                    <li>It has a good and comprehensive documentation</li>
+                    <li>It is a lot more easy to use compared to standard javascript and other javascript libraries.
+                    </li>
+                    <li>JQuery lets users develop Ajax templates with ease, Ajax enables a sleeker interface where
+                        actions can be performed on pages without requiring the entire page to be reloaded.</li>
+                    <li>Being Light weight and a powerful chaining capabilities makes jQuery more strong.</li>
+                </ul>
+                <p><b>Disadvantages:</b></p>
+                <ul>
+                    <li>While JQuery has an impressive library in terms of quantity, depending on how much
+                        customization you require on your website, the functionality may be limited thus using raw
+                        javascript may be inevitable in some cases.</li>
+                    <li>The JQuery javascript file is required to run JQuery commands, while the size of this file
+                        is relatively small (25-100KB depending on the server), it is still a strain on the client
+                        computer and maybe your web server as well if you intend to host the JQuery script on your
+                        own web server.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="home-section default-section bootstrap" style="display: none;">
+            <div class="bootstrap-page">
+                <h1>Bootstrap 4 | Introduction</h1>
+                <p>Bootstrap is a free and open-source tool collection for creating
+                    responsive websites and web applications. It is the most popular HTML, CSS, and JavaScript
+                    framework for developing responsive, mobile-first websites. It solves many problems which we had
+                    once, one of which is the cross-browser compatibility issue. Nowadays, the websites are perfect
+                    for all the browsers (IE, Firefox, and Chrome) and for all sizes of screens (Desktop, Tablets,
+                    Phablets, and Phones). All thanks to Bootstrap developers -Mark Otto and Jacob Thornton of
+                    Twitter, though it was later declared to be an open-source project.</p>
+                <p><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190531150437/Bootstrap_image.png">
+                </p>
+                <p><strong>Why Bootstrap?</strong>&nbsp;</p>
+                <ul>
+                    <li>Faster and Easier Web Development.</li>
+                    <li>It creates Platform-independent web pages.</li>
+                    <li>It creates Responsive Web-pages.</li>
+                    <li>It is designed to be responsive to mobile devices too.</li>
+                    <li>It is Free! Available on www.getbootstrap.com</li>
+                </ul>
+                <p><strong>How to use Bootstrap 4 on a</strong> <strong>webpage:</strong>
+                    There are two ways to include Bootstrap on the website.&nbsp;</p>
+                <ul>
+                    <li>Include Bootstrap from the CDN link.</li>
+                    <li>Download Bootstrap from getbootstrap.com and use it.</li>
+                </ul>
+                <p><strong>BootStrap 4 from CDN:</strong> This method of installing
+                    Bootstrap is easy. It is highly recommended to follow this method.&nbsp;</p>
+                <ul>
+                    <li>Go to <a href="http://www.getbootstrap.com">www.getbootstrap.com</a> and click Getting Started.
+                        Scroll down and copy the Bootstrap CDN for CSS, JS, Popper.js, and jQuery links.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="home-section default-section atom" style="display: none;">
+            <h1>Getting Started with Atom</h1>
+            <span>In this article, we will go over the steps necessary
+                to download a popular text editor called Atom. By the end of the article you will be
+                able to create a folder in Atom that contains an html document that you can open in your
+                web browser.</span>
+
+            <h2>Introduction</h2>
+            <p>Text editors, also called code editors, are applications used
+                by developers to write code. They highlight and format your code so that it’s easier
+                to read and understand. If you’ve used Codecademy, you’re already familiar with a
+                text editor! It’s the area you write your code in.</p>
+            <p>Text editors provide a number of advantages to web
+                developers:</p>
+            <ul>
+                <li>Language-specific syntax highlighting</li>
+                <li>Automatic code indentation</li>
+                <li>Color schemes to suit your preferences and optimize
+                    code readability</li>
+                <li>Plug-ins to catch errors in the code</li>
+                <li>A tree view of your project’s folders and files, so you
+                    can conveniently navigate your project</li>
+                <li>Key shortcuts for faster development</li>
+            </ul>
+            <h4>1. CHOOSING A TEXT EDITOR</h4>
+            <p>There are a number of text editors to choose from. Atom and
+                Sublime Text are two of the most popular text editors used by developers.</p>
+            <p>Sublime Text has been the text editor of choice for many
+                years. It is stable and reliable.</p>
+            <p>Atom was released by GitHub after Sublime Text. It’s a fully
+                customizable text editor. Since Atom is written in HTML, CSS, and JavaScript, you
+                can customize it yourself once you’ve learned those languages.</p>
+            <p>Either text editor is great for development, so you can’t
+                make a bad decision here. When you are further along in your coding career, try
+                another code editor to see what features work well with your workflow.</p>
+            <p><strong>Exercise I: Download Atom</strong></p>
+            <p>This video details how to download and install Atom.</p>
+            <p>In this exercise, we recommend you follow these steps to
+                download Atom.</p>
+            <p><strong>OS X</strong></p>
+            <p>Atom works on Macs running OS X 10.8 or later.
+                Visit the <a href="https://atom.io/">Atom homepage </a> and click Download For Mac. In a few
+                moments, Atom will appear in your Downloads folder as a .zip file:</p>
+            <p>Click on atom-mac.zip to extract the application, then drag
+                the new icon into your Applications folder.
+                Double-click the application icon to load Atom and get started.</p>
+            <p><strong>Windows</strong></p>
+            <p>Atom supports Windows 7 or later.
+                Visit <a href="https://github.com/atom/atom/releases/tag/v1.12.9"> this </a> webpage and
+                download <strong>atom-windows.zip</strong>. In a few moments, Atom will appear in
+                your Downloads folder as a .zip file.</p>
+            <p>Follow the instructions in the Windows Installer to get
+                started. You can visit Atom’s Windows install page for more detailed instructions.
+            </p>
+            <h4>2. Development Folders</h4>
+            <p>Before using your text editor, it’s important to establish an
+                organized file system. As the number and size of your projects grow, it becomes
+                increasingly important to know where to save new projects and find old projects.
+            </p>
+            <p>Most developers store their projects in an easy-to-find
+                directory (what you might be used to calling a folder). Here at Codecademy, we
+                recommend naming this directory <code class="styles_code__NWUNd">projects</code>. It
+                will store all of your coding projects. Whenever you create a new project, no matter
+                how small, you should always make a new folder inside your <code
+                    class="styles_code__NWUNd">projects</code> directory. You will find that
+                single-file projects can quickly turn into large, multi-folder projects. </p>
+            <p><strong>Exercise II: Create a dev folder</strong></p>
+            <p>Below are the steps you need to follow to create a new folder
+                for all of your programming projects. You will also learn how to load a new project
+                folder into Atom. For steps 1 and 2, navigate to a folder using Finder (Mac users)
+                or My Computer (PC users).</p>
+            <ol>
+                <li>
+                    <p>Navigate to a folder you visit regularly and create a
+                        new folder called <code class="styles_code__NWUNd">projects</code>. On Mac,
+                        this may be your User account. On PC, you may want to save this on your C
+                        drive.</p>
+                </li>
+                <li>
+                    <p>Inside the <code class="styles_code__NWUNd">projects</code> directory, create a new
+                        folder called <code class="styles_code__NWUNd">HelloWorld</code>. Everything
+                        you add to this folder will be part of your <code class="styles_code__NWUNd">HelloWorld</code>
+                        project.</p>
+                </li>
+                <li>
+                    <p>Open Atom on your computer.</p>
+                </li>
+                <li>
+                    <p>Atom provides a tree view of your project, so you can
+                        conveniently navigate to different folders and files. In the Atom menu bar,
+                        choose File &gt; Add Project Folder. This will launch your file manager.
+                        Navigate to the <code class="styles_code__NWUNd">HelloWorld</code> folder
+                        and select Open. The folder will open in Atom’s side pane. At this point,
+                        there should not be any contents in the folder. We’ll add a file in the next
+                        exercise.</p>
+                </li>
+            </ol>
+            <h4>3. Adding a File</h4>
+            <p>When you open Atom, the Welcome Guide will appear. For now,
+                we’ll skip getting to know Atom and start writing some code.</p>
+            <p>Before you learn how to add files to a project folder, it is
+                important to understand the purpose of file extensions.</p>
+            <p>A <em>file extension</em> is the suffix of a filename and
+                describes the type of content the file contains. The file extension is always the
+                last 3 or 4 characters in a filename, preceded by a period. For example, the HTML
+                file extension is <code class="styles_code__NWUNd">.html</code>, and it tells the
+                browser (and other applications) to interpret the contents of the file as a web
+                page. </p>
+            <p>Once Atom loads a project folder, you can add files. The
+                steps below describe how to add files. Don’t worry about doing this on your own
+                computer. We’ll get to that in Exercise III.</p>
+            <ol>
+                <li>In Atom’s top bar, select File &gt; New File. An
+                    untitled, blank file will appear.</li>
+                <li>In Atom’s top bar, choose File &gt; Save or Save As.
+                    Name the file with its appropriate file extension (<code class="styles_code__NWUNd">.html</code>,
+                    <code class="styles_code__NWUNd">.css</code>, <code class="styles_code__NWUNd">.csv</code>). It is
+                    critical that you include the
+                    correct file extension, so programs know how to interpret its contents.
+                </li>
+                <li>Begin coding! Save your file often. This will decrease
+                    the chances of losing unsaved work. </li>
+            </ol>
+            <h4>4. File Extensions and Syntax
+                Highlighting</h4>
+            <p>Atom and other text editors are able to interpret file
+                extensions and provide language-specific syntax highlighting. Syntax highlighting is
+                a tool for making code <em>easier</em> to read. Take a look at your
+                <strong>index.html</strong> file. The text and tags are different colors. This is
+                how Atom highlights <strong>.html</strong> syntax. With each new language you learn,
+                Atom will highlight text in a way that makes your code easy to read. This may be
+                different than other text editors and also different than the way your code is
+                highlighted on Codecademy.
+            </p>
+            <p><strong>Exercise IV: Open your HTML File in a web
+                    browser</strong></p>
+            <p>At this point, your file is ready to be viewed in a web
+                browser. The following steps should be taken <strong>outside of Atom</strong>:</p>
+            <ol>
+                <li>
+                    <p>Back in your file system, navigate to the
+                        <strong>index.html</strong> file in your Hello World folder.
+                    </p>
+                </li>
+                <li>
+                    <p>Double click <strong>index.html</strong>. the page
+                        should open in your default web browser.</p>
+                </li>
+            </ol>
+            <p>Congratulations! You can create web pages on your own
+                computer!</p>
+        </div>
+
+        <div class="home-section default-section wappalyzer" style="display: none;">
+            <div class="wappalyzer-page">
+                <h1>An introduction to Wappalyzer</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi maxime atque quidem eligendi natus
+                    nostrum? Atque dicta placeat maiores obcaecati doloribus eius eum ea repudiandae! Ullam sunt sequi
+                    veritatis odio, explicabo qui molestias quibusdam cupiditate aperiam beatae saepe excepturi tenetur.
+                    Sed ullam obcaecati dolorum, deleniti ipsum quis, sit beatae perferendis distinctio cum perspiciatis
+                    minima. Tempore est autem in vero ea nemo vitae itaque veritatis ipsa accusantium illo aperiam, quis
+                    voluptatibus. Ipsum non quas dignissimos eaque adipisci officiis ea sapiente! Accusantium, iste
+                    ipsam. Eius magni ipsa deleniti vel modi iste laboriosam magnam accusamus distinctio aut nobis
+                    facere, omnis eos perferendis a error incidunt praesentium numquam veniam necessitatibus, sequi
+                    quasi assumenda dicta? Odit alias officia aliquam corrupti nisi quae adipisci quod accusantium
+                    magnam, id libero tempora blanditiis iure numquam rerum minus quasi quos autem at asperiores nulla?
+                    Libero illum quod sapiente architecto veniam minima quaerat accusamus, eos possimus, hic qui? Fugiat
+                    earum eligendi quo deleniti a incidunt dolore labore voluptates temporibus odio ipsum pariatur
+                    architecto omnis, veritatis veniam enim eos, praesentium, sapiente dolor. Amet odio obcaecati
+                    voluptates officia, ea temporibus labore et consectetur architecto incidunt quaerat! Officia
+                    delectus exercitationem dolorum cum adipisci harum molestiae nam corporis vero quaerat quis culpa
+                    aperiam maxime nemo dignissimos, saepe earum qui odio placeat quidem facilis necessitatibus! Natus
+                    est a molestiae beatae ex enim quidem, sequi sint nobis earum alias praesentium fuga amet quaerat
+                    illum nemo? Quas praesentium similique saepe qui, cumque obcaecati labore. Sed voluptatum corrupti
+                    maiores modi, minus debitis culpa impedit molestiae sequi animi? Ab nobis blanditiis dignissimos
+                    doloremque maiores veritatis inventore doloribus sint perspiciatis nemo quia id ad similique,
+                    commodi laborum numquam vel, iusto distinctio architecto quidem dolorem neque maxime. Voluptatem
+                    adipisci consequuntur facilis beatae minus et voluptates soluta? Tempore consectetur unde repellat!
+                    Fugiat in rem velit quidem explicabo, incidunt officia molestiae facilis enim sit cupiditate sunt
+                    culpa nulla nostrum minus illum voluptates est minima tempora voluptate mollitia corporis! Ipsam
+                    debitis nobis commodi modi provident tempore perferendis. Debitis voluptatem inventore ullam totam,
+                    cupiditate quia reiciendis cumque modi voluptates ipsum eius neque quas temporibus at exercitationem
+                    omnis aperiam nobis commodi quidem deleniti quam eos nostrum rem sequi? Alias ducimus obcaecati
+                    animi assumenda sapiente porro minima non possimus accusamus sint aspernatur ad vitae enim ullam, ut
+                    maiores quaerat exercitationem adipisci explicabo in neque eveniet iure quod ratione? Minus illo
+                    facere molestiae aspernatur debitis eaque, quas earum maxime nemo accusantium excepturi in ea porro
+                    quod? Fugiat omnis perspiciatis repudiandae tempore exercitationem velit recusandae harum fugit
+                    laboriosam fuga, quasi inventore odit dolorum, tenetur magnam sunt, nam aspernatur ipsum illo
+                    quisquam consequatur! Accusantium dolore quas earum dolor porro, sint similique molestiae,
+                    consequuntur sequi doloremque, ratione placeat minima numquam deserunt eaque doloribus est? Sed hic
+                    suscipit minima ullam libero deserunt dolor nemo illum excepturi quia aliquam nobis magni, pariatur
+                    quasi asperiores! Alias soluta enim porro assumenda earum dicta repellat voluptates rem vitae
+                    delectus quae accusantium, laborum commodi possimus aut exercitationem ipsum sequi sunt qui
+                    voluptate ut fugiat! Ducimus consectetur tempore in voluptatum eos impedit fugit, doloribus cumque
+                    culpa alias nulla quidem rerum provident ipsa est nihil at sapiente ratione quia adipisci sit!
+                    Excepturi non, facilis exercitationem magnam deleniti tempora, ea qui aut aliquam, blanditiis omnis
+                    possimus? Quis, quasi error, cumque impedit modi, ad fuga nam adipisci iusto eaque nisi enim
+                    obcaecati beatae minima distinctio fugit accusamus! Error culpa iure at exercitationem eaque
+                    deleniti veniam, optio provident consequatur consectetur velit qui placeat dolore! Rerum quos non
+                    nemo odit ea illo nobis iusto dolorem ipsum veritatis eveniet tenetur ducimus saepe doloribus
+                    debitis ratione, consequuntur error repudiandae labore aliquam quisquam! Laborum, quo consequuntur
+                    laboriosam molestiae facere nemo temporibus facilis sed eligendi non possimus consectetur magnam
+                    esse distinctio natus alias minus sequi. Quae commodi saepe, in velit expedita aut ipsam! Maxime
+                    distinctio dolorem excepturi fugit quia molestiae et ducimus eveniet ipsum commodi. Doloribus cum
+                    illo voluptatibus culpa ipsam provident mollitia sint recusandae, hic ea, quas maiores. Quasi culpa
+                    perspiciatis amet nisi. Qui velit corrupti asperiores, ducimus magnam error. Reprehenderit quis
+                    similique, facere minima sequi iste velit totam a quasi hic atque ea alias ullam eaque blanditiis
+                    eos magnam provident at rem fugiat dicta harum sed. Alias voluptate quidem molestiae magni suscipit
+                    nobis deleniti minima est quasi! Similique porro amet, aut est officiis velit placeat ipsam quidem
+                    nisi? Ad, consequuntur est provident recusandae nisi veritatis cum adipisci architecto reprehenderit
+                    dolores qui cumque, deleniti aliquam praesentium voluptatibus voluptate quam! Error mollitia at
+                    labore quisquam in exercitationem porro aut deserunt iste cupiditate quaerat veniam nisi voluptatem
+                    illum, animi est laudantium reiciendis molestias ut sapiente! Consectetur voluptatem facilis
+                    voluptas dignissimos, temporibus harum ipsam facere suscipit, numquam repudiandae, quaerat molestiae
+                    placeat praesentium. Soluta omnis ad iste itaque. Ducimus quo, doloremque voluptate iste vero eaque
+                    animi, ut velit id explicabo rerum at esse. Debitis alias, necessitatibus inventore ipsum incidunt
+                    obcaecati adipisci reiciendis officia explicabo quae, laudantium magnam autem omnis facere delectus!
+                    Eius nostrum obcaecati natus! Vel architecto obcaecati deserunt nam asperiores quos maxime cum
+                    quibusdam tempore, veniam officia necessitatibus error eligendi dignissimos mollitia aliquam a
+                    temporibus explicabo voluptatum, qui veritatis sed numquam culpa aut. Incidunt veritatis non rerum
+                    quasi minus. Neque at aperiam dolorem quaerat vero illo quibusdam, fugit nobis optio laudantium
+                    nulla blanditiis, natus consequuntur voluptatibus deserunt nesciunt voluptates nam maxime ad
+                    reiciendis. Dolor nulla quae quia recusandae optio ipsum accusamus quos quasi facere nam natus
+                    praesentium quidem, vitae quo debitis, provident voluptate ea similique? Enim illum sapiente
+                    veritatis et, ipsum dignissimos, tenetur, nostrum fuga nam eum quis. Nemo, nam quasi iusto quibusdam
+                    magni dicta, repellat numquam cupiditate, fuga expedita quod nisi odio. Nesciunt explicabo inventore
+                    facilis consequuntur similique, ad aliquid fugiat? Deleniti ut voluptatem, veritatis dolores
+                    suscipit vero repellendus assumenda sit, quos, inventore delectus omnis voluptates aliquid
+                    architecto accusantium doloremque vitae culpa laudantium nam. Nisi a delectus mollitia deserunt
+                    vitae dolor repudiandae nobis et, dolores aliquid eveniet odit placeat, suscipit perspiciatis itaque
+                    nihil in minus? Dolores inventore placeat distinctio soluta unde! Iusto, recusandae delectus tenetur
+                    ipsum suscipit, earum tempore ex doloribus nesciunt, quod magnam laborum quo labore similique harum!
+                    Provident perferendis pariatur excepturi cumque nostrum, modi possimus repellat.</p>
+            </div>
+        </div>
+
+        <div class="home-section default-section scrimba" style="display: none;">
+            <div class="scrimba-page">
+                <h1>An introduction to Scrimba</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi maxime atque quidem eligendi natus
+                    nostrum? Atque dicta placeat maiores obcaecati doloribus eius eum ea repudiandae! Ullam sunt sequi
+                    veritatis odio, explicabo qui molestias quibusdam cupiditate aperiam beatae saepe excepturi tenetur.
+                    Sed ullam obcaecati dolorum, deleniti ipsum quis, sit beatae perferendis distinctio cum perspiciatis
+                    minima. Tempore est autem in vero ea nemo vitae itaque veritatis ipsa accusantium illo aperiam, quis
+                    voluptatibus. Ipsum non quas dignissimos eaque adipisci officiis ea sapiente! Accusantium, iste
+                    ipsam. Eius magni ipsa deleniti vel modi iste laboriosam magnam accusamus distinctio aut nobis
+                    facere, omnis eos perferendis a error incidunt praesentium numquam veniam necessitatibus, sequi
+                    quasi assumenda dicta? Odit alias officia aliquam corrupti nisi quae adipisci quod accusantium
+                    magnam, id libero tempora blanditiis iure numquam rerum minus quasi quos autem at asperiores nulla?
+                    Libero illum quod sapiente architecto veniam minima quaerat accusamus, eos possimus, hic qui? Fugiat
+                    earum eligendi quo deleniti a incidunt dolore labore voluptates temporibus odio ipsum pariatur
+                    architecto omnis, veritatis veniam enim eos, praesentium, sapiente dolor. Amet odio obcaecati
+                    voluptates officia, ea temporibus labore et consectetur architecto incidunt quaerat! Officia
+                    delectus exercitationem dolorum cum adipisci harum molestiae nam corporis vero quaerat quis culpa
+                    aperiam maxime nemo dignissimos, saepe earum qui odio placeat quidem facilis necessitatibus! Natus
+                    est a molestiae beatae ex enim quidem, sequi sint nobis earum alias praesentium fuga amet quaerat
+                    illum nemo? Quas praesentium similique saepe qui, cumque obcaecati labore. Sed voluptatum corrupti
+                    maiores modi, minus debitis culpa impedit molestiae sequi animi? Ab nobis blanditiis dignissimos
+                    doloremque maiores veritatis inventore doloribus sint perspiciatis nemo quia id ad similique,
+                    commodi laborum numquam vel, iusto distinctio architecto quidem dolorem neque maxime. Voluptatem
+                    adipisci consequuntur facilis beatae minus et voluptates soluta? Tempore consectetur unde repellat!
+                    Fugiat in rem velit quidem explicabo, incidunt officia molestiae facilis enim sit cupiditate sunt
+                    culpa nulla nostrum minus illum voluptates est minima tempora voluptate mollitia corporis! Ipsam
+                    debitis nobis commodi modi provident tempore perferendis. Debitis voluptatem inventore ullam totam,
+                    cupiditate quia reiciendis cumque modi voluptates ipsum eius neque quas temporibus at exercitationem
+                    omnis aperiam nobis commodi quidem deleniti quam eos nostrum rem sequi? Alias ducimus obcaecati
+                    animi assumenda sapiente porro minima non possimus accusamus sint aspernatur ad vitae enim ullam, ut
+                    maiores quaerat exercitationem adipisci explicabo in neque eveniet iure quod ratione? Minus illo
+                    facere molestiae aspernatur debitis eaque, quas earum maxime nemo accusantium excepturi in ea porro
+                    quod? Fugiat omnis perspiciatis repudiandae tempore exercitationem velit recusandae harum fugit
+                    laboriosam fuga, quasi inventore odit dolorum, tenetur magnam sunt, nam aspernatur ipsum illo
+                    quisquam consequatur! Accusantium dolore quas earum dolor porro, sint similique molestiae,
+                    consequuntur sequi doloremque, ratione placeat minima numquam deserunt eaque doloribus est? Sed hic
+                    suscipit minima ullam libero deserunt dolor nemo illum excepturi quia aliquam nobis magni, pariatur
+                    quasi asperiores! Alias soluta enim porro assumenda earum dicta repellat voluptates rem vitae
+                    delectus quae accusantium, laborum commodi possimus aut exercitationem ipsum sequi sunt qui
+                    voluptate ut fugiat! Ducimus consectetur tempore in voluptatum eos impedit fugit, doloribus cumque
+                    culpa alias nulla quidem rerum provident ipsa est nihil at sapiente ratione quia adipisci sit!
+                    Excepturi non, facilis exercitationem magnam deleniti tempora, ea qui aut aliquam, blanditiis omnis
+                    possimus? Quis, quasi error, cumque impedit modi, ad fuga nam adipisci iusto eaque nisi enim
+                    obcaecati beatae minima distinctio fugit accusamus! Error culpa iure at exercitationem eaque
+                    deleniti veniam, optio provident consequatur consectetur velit qui placeat dolore! Rerum quos non
+                    nemo odit ea illo nobis iusto dolorem ipsum veritatis eveniet tenetur ducimus saepe doloribus
+                    debitis ratione, consequuntur error repudiandae labore aliquam quisquam! Laborum, quo consequuntur
+                    laboriosam molestiae facere nemo temporibus facilis sed eligendi non possimus consectetur magnam
+                    esse distinctio natus alias minus sequi. Quae commodi saepe, in velit expedita aut ipsam! Maxime
+                    distinctio dolorem excepturi fugit quia molestiae et ducimus eveniet ipsum commodi. Doloribus cum
+                    illo voluptatibus culpa ipsam provident mollitia sint recusandae, hic ea, quas maiores. Quasi culpa
+                    perspiciatis amet nisi. Qui velit corrupti asperiores, ducimus magnam error. Reprehenderit quis
+                    similique, facere minima sequi iste velit totam a quasi hic atque ea alias ullam eaque blanditiis
+                    eos magnam provident at rem fugiat dicta harum sed. Alias voluptate quidem molestiae magni suscipit
+                    nobis deleniti minima est quasi! Similique porro amet, aut est officiis velit placeat ipsam quidem
+                    nisi? Ad, consequuntur est provident recusandae nisi veritatis cum adipisci architecto reprehenderit
+                    dolores qui cumque, deleniti aliquam praesentium voluptatibus voluptate quam! Error mollitia at
+                    labore quisquam in exercitationem porro aut deserunt iste cupiditate quaerat veniam nisi voluptatem
+                    illum, animi est laudantium reiciendis molestias ut sapiente! Consectetur voluptatem facilis
+                    voluptas dignissimos, temporibus harum ipsam facere suscipit, numquam repudiandae, quaerat molestiae
+                    placeat praesentium. Soluta omnis ad iste itaque. Ducimus quo, doloremque voluptate iste vero eaque
+                    animi, ut velit id explicabo rerum at esse. Debitis alias, necessitatibus inventore ipsum incidunt
+                    obcaecati adipisci reiciendis officia explicabo quae, laudantium magnam autem omnis facere delectus!
+                    Eius nostrum obcaecati natus! Vel architecto obcaecati deserunt nam asperiores quos maxime cum
+                    quibusdam tempore, veniam officia necessitatibus error eligendi dignissimos mollitia aliquam a
+                    temporibus explicabo voluptatum, qui veritatis sed numquam culpa aut. Incidunt veritatis non rerum
+                    quasi minus. Neque at aperiam dolorem quaerat vero illo quibusdam, fugit nobis optio laudantium
+                    nulla blanditiis, natus consequuntur voluptatibus deserunt nesciunt voluptates nam maxime ad
+                    reiciendis. Dolor nulla quae quia recusandae optio ipsum accusamus quos quasi facere nam natus
+                    praesentium quidem, vitae quo debitis, provident voluptate ea similique? Enim illum sapiente
+                    veritatis et, ipsum dignissimos, tenetur, nostrum fuga nam eum quis. Nemo, nam quasi iusto quibusdam
+                    magni dicta, repellat numquam cupiditate, fuga expedita quod nisi odio. Nesciunt explicabo inventore
+                    facilis consequuntur similique, ad aliquid fugiat? Deleniti ut voluptatem, veritatis dolores
+                    suscipit vero repellendus assumenda sit, quos, inventore delectus omnis voluptates aliquid
+                    architecto accusantium doloremque vitae culpa laudantium nam. Nisi a delectus mollitia deserunt
+                    vitae dolor repudiandae nobis et, dolores aliquid eveniet odit placeat, suscipit perspiciatis itaque
+                    nihil in minus? Dolores inventore placeat distinctio soluta unde! Iusto, recusandae delectus tenetur
+                    ipsum suscipit, earum tempore ex doloribus nesciunt, quod magnam laborum quo labore similique harum!
+                    Provident perferendis pariatur excepturi cumque nostrum, modi possimus repellat.</p>
+            </div>
+        </div>
+    </div>
+    <script src="/javascript/script.js"></script>
 </body>
+
 </html>
