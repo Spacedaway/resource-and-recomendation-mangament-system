@@ -35,7 +35,7 @@ nav {
   width: 100%;
   height: 100%;
   height: 70px;
-  background: #3E8DA8;
+  background: #b4dce8;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   z-index: 99;
 }
@@ -56,6 +56,10 @@ nav .navbar {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+}
+
+.navbar .logo a img {
+    margin-top: 12px;
 }
 
 nav .navbar .nav-links {
@@ -104,7 +108,7 @@ nav .navbar .links li .sub-menu {
   top: 70px;
   left: 0;
   line-height: 40px;
-  background: #3E8DA8;
+  background: #b4dce8;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
   display: none;
@@ -150,7 +154,7 @@ nav .navbar .links li:hover .resources-sub-menu {
 .test-btn {
     border: 1px solid transparent;
     border-radius: 40px;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     font-weight: 600;
     justify-content: center;
@@ -160,15 +164,15 @@ nav .navbar .links li:hover .resources-sub-menu {
     width: auto;
     font-size: 16px;
     padding: 11px 30px;
-    background-color: #0000FF;
-    border-color: #0000FF;
-    color: #fff;
+    background-color: #fff;
+    border-color: #fff;
+    font-weight: 900;
 }
 
 .test-btn:hover {
-    background-color: #000055;
-    border-color: #000055;
-    color: #fff;
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+    color: #000;
 }
 
 .navbar .nav-links .sidebar-logo {
@@ -386,11 +390,12 @@ nav .navbar .links li:hover .resources-sub-menu {
 }
 
 .default-section li {
-    margin-left: 4rem;
+    margin-left: 1rem;
 }
 
 .default-section h1, .default-section h2, .default-section h3, .default-section h4, 
-.default-section p, .default-section pre, .default-section ul, .default-section figure {
+.default-section p, .default-section pre, .default-section ul, .default-section figure, 
+.default-section li {
     margin-bottom: 2rem;
 }
 
@@ -476,7 +481,7 @@ nav .navbar .links li:hover .resources-sub-menu {
         display: block;
         max-width: 270px;
         width: 100%;
-        background:  #3E8DA8;
+        background:  #b4dce8;
         line-height: 40px;
         padding: 20px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
