@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -25,37 +25,37 @@ img {
 
 body {
     position: relative;
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  height: 70px;
-  background: #b4dce8;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 70px;
+    background: #000066;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    z-index: 99;
 }
 
 nav .navbar {
-  height: 100%;
-  max-width: 1250px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
-  padding: 0 50px;
+    height: 100%;
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 50px;
 }
 
 .navbar .logo a {
-  font-size: 30px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .navbar .logo a img {
@@ -63,92 +63,100 @@ nav .navbar {
 }
 
 nav .navbar .nav-links {
-  line-height: 70px;
-  height: 100%;
+    line-height: 70px;
+    height: 100%;
 }
 
 nav .navbar .links {
-  display: flex;
+    display: flex;
 }
 
 nav .navbar .links li {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0 14px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 14px;
 }
 
 nav .navbar .links li a {
-  height: 100%;
-  text-decoration: none;
-  white-space: nowrap;
-  color: #fff;
-  font-size: 25px;
-  font-weight: 500;
+    height: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
 }
 
-.links li:hover .resources-arrow{
-  transform: rotate(180deg);
+.links li:hover .resources-arrow {
+    transform: rotate(180deg);
 }
 
 nav .navbar .links li .arrow {
-  height: 100%;
-  width: 22px;
-  line-height: 70px;
-  text-align: center;
-  display: inline-block;
-  color: #fff;
-  transition: all 0.3s ease;
+    height: 100%;
+    width: 22px;
+    line-height: 70px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    transition: all 0.3s ease;
 }
 
 nav .navbar .links li .sub-menu {
-  position: absolute;
-  top: 70px;
-  left: 0;
-  line-height: 40px;
-  background: #b4dce8;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 4px 4px;
-  display: none;
-  z-index: 2;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    line-height: 40px;
+    background: #000066;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+    display: none;
+    z-index: 2;
 }
 
 nav .navbar .links li:hover .resources-sub-menu {
-  display: block;
+    display: block;
 }
 
 .navbar .links li .sub-menu li {
-  padding: 0 22px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 0 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar .links li .sub-menu a {
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .navbar .links li .sub-menu .more-arrow {
-  line-height: 40px;
+    line-height: 40px;
 }
 
 .navbar .links li .sub-menu .more-sub-menu {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  border-radius: 0 4px 4px 4px;
-  z-index: 1;
-  display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 0 4px 4px 4px;
+    z-index: 1;
+    display: none;
 }
 
 .links li .sub-menu .more:hover .more-sub-menu {
-  display: block;
+    display: block;
 }
 
 .navbar .search-box {
     position: relative;
+}
+
+.login {
+    color: white;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .test-btn {
@@ -160,7 +168,7 @@ nav .navbar .links li:hover .resources-sub-menu {
     justify-content: center;
     line-height: 2;
     outline: 0;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     width: auto;
     font-size: 16px;
     padding: 11px 30px;
@@ -176,7 +184,7 @@ nav .navbar .links li:hover .resources-sub-menu {
 }
 
 .navbar .nav-links .sidebar-logo {
-  display: none;
+    display: none;
 }
 
 .navbar .bx-menu {
@@ -234,7 +242,8 @@ nav .navbar .links li:hover .resources-sub-menu {
     background: #1d1b31;
 }
 
-.sidebar .nav-links li .iocn-link, .nav-iocn-link {
+.sidebar .nav-links li .iocn-link,
+.nav-iocn-link {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -336,7 +345,8 @@ nav .navbar .links li:hover .resources-sub-menu {
     transition: all 0.5s ease;
 }
 
-.sidebar .profile-details .profile_name, .sidebar .profile-details .job {
+.sidebar .profile-details .profile_name,
+.sidebar .profile-details .job {
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -351,7 +361,7 @@ nav .navbar .links li:hover .resources-sub-menu {
     width: fit-content;
     min-height: fit-content;
     overflow-y: scroll;
-    background: #E4E9F7;
+    background: #e4e9f7;
 }
 
 .home-section {
@@ -381,7 +391,8 @@ nav .navbar .links li:hover .resources-sub-menu {
 }
 
 /* Default Stylings */
-.default-page h2, .default-page img {
+.default-page h2,
+.default-page img {
     padding-bottom: 20px;
 }
 
@@ -393,8 +404,14 @@ nav .navbar .links li:hover .resources-sub-menu {
     margin-left: 1rem;
 }
 
-.default-section h1, .default-section h2, .default-section h3, .default-section h4, 
-.default-section p, .default-section pre, .default-section ul, .default-section figure, 
+.default-section h1,
+.default-section h2,
+.default-section h3,
+.default-section h4,
+.default-section p,
+.default-section pre,
+.default-section ul,
+.default-section figure,
 .default-section li {
     margin-bottom: 2rem;
 }
@@ -426,16 +443,16 @@ nav .navbar .links li:hover .resources-sub-menu {
         width: 100%;
         left: 0;
     }
-}  
+}
 
-@media (max-width:920px) {
+@media (max-width: 920px) {
     nav .navbar {
         max-width: 100%;
         padding: 0 25px;
     }
 
     nav .navbar .logo a {
-    font-size: 27px;
+        font-size: 27px;
     }
 
     nav .navbar .links li {
@@ -448,7 +465,7 @@ nav .navbar .links li:hover .resources-sub-menu {
     }
 }
 
-@media (max-width:800px){
+@media (max-width: 800px) {
     .side-bar-hidden {
         display: block;
     }
@@ -479,9 +496,9 @@ nav .navbar .links li:hover .resources-sub-menu {
         top: 0;
         left: -100%;
         display: block;
-        max-width: 270px;
+        /* max-width: 300px; */
         width: 100%;
-        background:  #b4dce8;
+        background: #000066;
         line-height: 40px;
         padding: 20px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -496,12 +513,40 @@ nav .navbar .links li:hover .resources-sub-menu {
         justify-content: space-between;
     }
 
+    .login {
+        align-items: center;
+        border: 1px solid;
+        border-radius: 45px;
+        color: #fff;
+        display: inline-flex;
+        font-family: Open Sans,Helvetica Neue,Arial,sans-serif;
+        font-weight: 500;
+        justify-content: center;
+        letter-spacing: .05em;
+        outline: 0;
+        text-decoration: none;
+        transition: all .1s ease-in-out;
+        cursor: pointer;
+        width: auto;
+        font-size: 16px;
+        padding: 7px 60px;
+    }
+
+    .search-box {
+        margin-top: 20px;
+    }
+
+    .login-mobile {
+        padding-bottom: 20px;
+    }
+
     .sidebar-logo .logo-name {
         font-size: 25px;
         color: #fff;
     }
 
-    .sidebar-logo  i, .navbar .bx-menu {
+    .sidebar-logo i,
+    .navbar .bx-menu {
         font-size: 25px;
         color: #fff;
     }
@@ -512,9 +557,9 @@ nav .navbar .links li:hover .resources-sub-menu {
     }
 
     nav .navbar .links li .arrow {
-       line-height: 40px;
+        line-height: 40px;
     }
-    
+
     nav .navbar .links li {
         display: block;
     }
@@ -542,10 +587,11 @@ nav .navbar .links li:hover .resources-sub-menu {
         justify-content: space-between;
     }
 
-    .links li:hover .resources-arrow, .links li:hover .category-arrow {
+    .links li:hover .resources-arrow,
+    .links li:hover .category-arrow {
         transform: rotate(0deg);
     }
-    
+
     .navbar .links li .sub-menu .more-sub-menu {
         display: none;
     }
@@ -556,23 +602,23 @@ nav .navbar .links li:hover .resources-sub-menu {
     }
 
     .links li .sub-menu .more:hover .more-sub-menu {
-       display: none;
+        display: none;
     }
 
-    nav .navbar .links li:hover .resources-sub-menu, 
+    nav .navbar .links li:hover .resources-sub-menu,
     nav .navbar .links li:hover .applications-sub-menu,
     nav .navbar .links li:hover .cornerstones-sub-menu,
     nav .navbar .links li:hover .extensions-sub-menu,
-    nav .navbar .links li:hover .websites-sub-menu, 
+    nav .navbar .links li:hover .websites-sub-menu,
     nav .navbar .links li:hover .category-sub-menu {
         display: none;
     }
 
-    .navbar  .nav-links.show1 .links .resources-sub-menu,
+    .navbar .nav-links.show1 .links .resources-sub-menu,
     .navbar .nav-links.show4 .links .applications-sub-menu,
     .navbar .nav-links.show3 .links .cornerstones-sub-menu,
     .navbar .nav-links.show5 .links .extensions-sub-menu,
-    .navbar .nav-links.show6 .links .websites-sub-menu,  
+    .navbar .nav-links.show6 .links .websites-sub-menu,
     .navbar .nav-links.show2 .links .category-sub-menu {
         display: block;
     }
@@ -590,9 +636,9 @@ nav .navbar .links li:hover .resources-sub-menu {
         width: fit-content;
         min-height: fit-content;
         overflow-y: visible;
-        background: #E4E9F7;
+        background: #e4e9f7;
     }
-    
+
     .home-section {
         position: relative;
         padding: 25px;
@@ -605,8 +651,8 @@ nav .navbar .links li:hover .resources-sub-menu {
     }
 }
 
-@media (max-width:370px) {
+@media (max-width: 370px) {
     nav .navbar .nav-links {
         max-width: 100%;
-    } 
+    }
 }
