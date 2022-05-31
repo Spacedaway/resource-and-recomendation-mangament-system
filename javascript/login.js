@@ -63,4 +63,4 @@ loginForm.addEventListener("submit", function () {
     }
     loginForm.reset();
 });
-localStorage.clear();
+// localStorage.clear();
