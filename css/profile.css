@@ -93,6 +93,17 @@ nav .navbar .links li a {
     transform: rotate(180deg);
 }
 
+.sidebar .nav-links li .iocn-link,
+.nav-iocn-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-iocn-link {
+    padding-right: 85px;
+}
+
 nav .navbar .links li .arrow {
     height: 100%;
     width: 22px;
@@ -191,278 +202,54 @@ nav .navbar .links li:hover .resources-sub-menu {
     display: none;
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    margin: 70px 0 0 0;
-    width: 300px;
-    background: #11101d;
-    z-index: 1;
-    overflow-y: scroll;
-}
-
-.sidebar .logo-details {
-    height: 60px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.sidebar .logo-details i {
-    font-size: 30px;
-    color: #fff;
-    height: 50px;
-    min-width: 78px;
-    text-align: center;
-    line-height: 50px;
-}
-
-.sidebar .logo-details .logo_name {
-    font-size: 22px;
-    color: #fff;
-    font-weight: 600;
-    transition: 0.3s ease;
-    transition-delay: 0.1s;
-}
-
-.sidebar .nav-links {
-    height: 100%;
-    padding: 30px 0 150px 0;
-}
-
-.sidebar .nav-links li {
-    position: relative;
-    list-style: none;
-    transition: all 0.4s ease;
-}
-
-.sidebar .nav-links li:hover {
-    background: #1d1b31;
-}
-
-.sidebar .nav-links li .iocn-link,
-.nav-iocn-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.sidebar .nav-links li i {
-    height: 50px;
-    min-width: 78px;
-    text-align: center;
-    line-height: 50px;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.sidebar .nav-links li.showMenu i.arrow {
-    transform: rotate(-180deg);
-}
-
-.sidebar .nav-links li a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.sidebar .nav-links li a .link_name {
-    font-size: 18px;
-    font-weight: 400;
-    color: #fff;
-    transition: all 0.4s ease;
-}
-
-.sidebar .nav-links li .sub-menu {
-    padding: 6px 6px 14px 80px;
-    margin-top: -10px;
-    background: #1d1b31;
-    display: none;
-}
-
-.sidebar .nav-links li.showMenu .sub-menu {
-    display: block;
-}
-
-.sidebar .nav-links li .sub-menu a {
-    color: #fff;
-    font-size: 15px;
-    padding: 5px 0;
-    white-space: nowrap;
-    opacity: 0.6;
-    transition: all 0.3s ease;
-}
-
-.sidebar .nav-links li .sub-menu a:hover {
-    opacity: 1;
-}
-
-.sidebar .nav-links li .sub-menu .link_name {
-    display: none;
-}
-
-.sidebar .nav-links li .sub-menu.blank {
-    opacity: 1;
-    pointer-events: auto;
-    padding: 3px 20px 6px 16px;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.sidebar .nav-links li:hover .sub-menu.blank {
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.sidebar .profile-details {
-    position: fixed;
-    bottom: 0;
-    width: 260px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #1d1b31;
-    padding: 12px 0;
-    transition: all 0.5s ease;
-}
-
-.sidebar .profile-details .profile-content {
-    display: flex;
-    align-items: center;
-}
-
-.sidebar .profile-details img {
-    height: 52px;
-    width: 52px;
-    object-fit: cover;
-    border-radius: 16px;
-    margin: 0 14px 0 12px;
-    background: #1d1b31;
-    transition: all 0.5s ease;
-}
-
-.sidebar .profile-details .profile_name,
-.sidebar .profile-details .job {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    white-space: nowrap;
-}
-
-.sidebar .profile-details .job {
-    font-size: 12px;
-}
-
-.full-page {
-    width: fit-content;
-    min-height: fit-content;
-    overflow-y: scroll;
-    background: #e4e9f7;
-}
-
-.home-section {
-    position: relative;
-    padding: 50px;
+.container {
     margin-top: 70px;
-    height: 100%;
-    top: 0;
-    right: -300px;
-    width: calc(100% - 300px);
-    z-index: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
     overflow-y: scroll;
 }
 
-/* Styling the scrollbar. */
-::-webkit-scrollbar {
-    width: 7px;
+.profile-header {
+    padding: 50px 0px;
 }
 
-::-webkit-scrollbar-track {
-    background: transparent !important;
+.profile-picture {
+    padding-bottom: 50px;
 }
 
-::-webkit-scrollbar-thumb {
-    background: #bbbbbb;
-    border-radius: 10px;
+.wrapper {
+    border: 1px solid;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    color: white;
+    margin: auto;
+    background-color: gray;
 }
 
-/* Default Stylings */
-.default-page h2,
-.default-page img {
-    padding-bottom: 20px;
+.wrapper p {
+    padding-top: 50px;
+    font-size: xx-large;
 }
 
-.default-page h2 {
-    text-align: center;
+.profile-about {
+    border: 1px solid;
+    background-color: #6363b3;
+    color: #fff;
+    width: 700px;
+    height: auto;
+    max-width: 100%;
+    margin: auto;
 }
 
-.default-section li {
-    margin-left: 1rem;
+.profile-info {
+    padding: 50px 0px;
 }
 
-.default-section h1,
-.default-section h2,
-.default-section h3,
-.default-section h4,
-.default-section p,
-.default-section pre,
-.default-section ul,
-.default-section figure,
-.default-section li {
-    margin-bottom: 2rem;
-}
-
-.default-section h1 {
-    word-break: break-word;
-}
-
-@media (max-width: 400px) {
-    .sidebar.close .nav-links li .sub-menu {
-        display: none;
-    }
-
-    .sidebar {
-        width: 80px;
-    }
-
-    .sidebar.close {
-        width: 0;
-    }
-
-    .home-section {
-        /* left: 78px; */
-        width: 100%;
-        z-index: 1;
-    }
-
-    .sidebar.close ~ .home-section {
-        width: 100%;
-        left: 0;
-    }
-}
-
-@media (max-width: 920px) {
-    nav .navbar {
-        max-width: 100%;
-        padding: 0 25px;
-    }
-
-    nav .navbar .logo a {
-        font-size: 27px;
-    }
-
-    nav .navbar .links li {
-        padding: 0 10px;
-        white-space: nowrap;
-    }
-
-    nav .navbar .links li a {
-        font-size: 15px;
-    }
+.profile-info h2 {
+    padding-bottom: 25px;
 }
 
 @media (max-width: 800px) {
@@ -484,11 +271,6 @@ nav .navbar .links li:hover .resources-sub-menu {
 
     .sidebar {
         display: none;
-    }
-
-    .home-section {
-        width: 100%;
-        z-index: 1;
     }
 
     nav .navbar .nav-links {
@@ -587,8 +369,7 @@ nav .navbar .links li:hover .resources-sub-menu {
         justify-content: space-between;
     }
 
-    .links li:hover .resources-arrow,
-    .links li:hover .category-arrow {
+    .links li:hover .resources-arrow {
         transform: rotate(0deg);
     }
 
@@ -605,49 +386,16 @@ nav .navbar .links li:hover .resources-sub-menu {
         display: none;
     }
 
-    nav .navbar .links li:hover .resources-sub-menu,
-    nav .navbar .links li:hover .applications-sub-menu,
-    nav .navbar .links li:hover .cornerstones-sub-menu,
-    nav .navbar .links li:hover .extensions-sub-menu,
-    nav .navbar .links li:hover .websites-sub-menu,
-    nav .navbar .links li:hover .category-sub-menu {
+    nav .navbar .links li:hover .resources-sub-menu {
         display: none;
     }
 
-    .navbar .nav-links.show1 .links .resources-sub-menu,
-    .navbar .nav-links.show4 .links .applications-sub-menu,
-    .navbar .nav-links.show3 .links .cornerstones-sub-menu,
-    .navbar .nav-links.show5 .links .extensions-sub-menu,
-    .navbar .nav-links.show6 .links .websites-sub-menu,
-    .navbar .nav-links.show2 .links .category-sub-menu {
+    .navbar .nav-links.show1 .links .resources-sub-menu {
         display: block;
     }
 
-    .navbar .nav-links.show1 .links .resources-arrow,
-    .navbar .nav-links.show4 .links .applications-arrow,
-    .navbar .nav-links.show3 .links .cornerstones-arrow,
-    .navbar .nav-links.show5 .links .extensions-arrow,
-    .navbar .nav-links.show6 .links .websites-arrow,
-    .navbar .nav-links.show2 .links .category-arrow {
+    .navbar .nav-links.show1 .links .resources-arrow {
         transform: rotate(180deg);
-    }
-
-    .full-page {
-        width: fit-content;
-        min-height: fit-content;
-        overflow-y: visible;
-        background: #e4e9f7;
-    }
-
-    .home-section {
-        position: relative;
-        padding: 25px;
-        margin-top: 70px;
-        top: 0;
-        right: 0;
-        width: 100%;
-        z-index: 0;
-        overflow-y: scroll;
     }
 }
 

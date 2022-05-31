@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Resource Management | The Roothub</title>
-    <link rel="icon" href="/images/roothub-logo-white.png">
-    <link rel="stylesheet" href="/css/test.css">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page | The Roothub</title>
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="icon" href="/images/roothub-logo-white.png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -32,21 +32,37 @@
                             <li><a href="#">Digital Design</a></li>
                         </ul>
                     </li>
-                    <div class="search-box button-hidden">
-                        <div class="login-mobile">
-                            <a href="login.html" target="blank" class="login">Log In</a>
-                        </div>
-                        <a href="#"><button class="test-btn">Take the Test</button></a>
-                    </div>
                 </ul>
             </div>
             <div class="search-box button-hidden-off">
-                <a href="login.html" target="blank" class="login">Log In</a>
-                <a href="#"><button class="test-btn">Take the Test</button></a>
+                <img src="/images/profile pic.jpg" alt="" width="50">
             </div>
         </div>
     </nav>
-    <script src="/javascript/script.js"></script>
+    <div class="container">
+        <div class="profile-header">
+            <h1>Profile</h1>
+            <p id="profile-description"></p>
+        </div>
+        <div class="profile-picture">
+            <div class="wrapper">
+                <p>EI</p>
+            </div>
+        </div>
+        <div class="profile-about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quisquam ratione voluptatum ipsa eos
+                voluptas maxime tempore, corrupti provident rem explicabo laudantium accusamus similique ad officia,
+                officiis vel at quidem facilis? Obcaecati, quas nostrum sequi enim, dicta ut sed nobis vero perferendis,
+                temporibus totam iusto quis in impedit suscipit officia.</p>
+        </div>
+        <div class="profile-info">
+            <h2>Details</h2>
+            <h3 id="profile-name"></h3>
+            <p></p>
+        </div>
+    </div>
+    <script src="/javascript/profile.js"></script>
 </body>
 
 </html>

@@ -141,7 +141,7 @@ input[type="radio"] {
     margin-top: 20px;
 }
 
-.form-inner form .field input {
+.form-inner form .field input, .form-inner form .field select {
     height: 100%;
     width: 100%;
     outline: none;
