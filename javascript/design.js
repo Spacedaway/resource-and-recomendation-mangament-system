@@ -78,6 +78,7 @@ for (let i = 0; i < li_elements.length; i++) {
         defaultEl.forEach(function (item) {
             item.style.display = "none";
         });
+        navLinks.style.left = "-100%";
         if (li_value == "Unsplash") {
             document.querySelector("." + li_value).style.display = "block";
         } else if (
