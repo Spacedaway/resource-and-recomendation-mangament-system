@@ -28,8 +28,8 @@
                             <i class='bx bxs-chevron-down resources-arrow arrow '></i>
                         </div>
                         <ul class="resources-sub-menu sub-menu">
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">Digital Design</a></li>
+                            <li><a href="/index.html">Web Development</a></li>
+                            <li><a href="/design.html">Digital Design</a></li>
                         </ul>
                     </li>
                     <div class="side-bar-hidden side-bar-nav">
@@ -111,15 +111,29 @@
                     </div>
                     <div class="search-box button-hidden">
                         <div class="login-mobile">
-                        <a href="login.html" target="blank" class="login">Log In</a>
+                            <a href="login.html" target="blank" id="login-mobile" class="login">Log In</a>
                         </div>
-                        <a href="#"><button class="test-btn">Take the Test</button></a>
+                        <!-- <a href="#"><button class="test-btn">Take the Test</button></a> -->
                     </div>
                 </ul>
             </div>
+            <div class="user-active hidden">
+                <ul class="links">
+                    <li>
+                        <div class="search-box button-hidden-off">
+                            <a href=""><img src="/images/change-user-512.png" alt="" width="50"></a>
+                            <i class='bx bxs-chevron-down resources-arrow arrow profile-arrow'></i>
+                        </div>
+                        <ul class="resources-sub-menu sub-menu">
+                            <li><a href="/login.html">Login New User</a></li>
+                            <li><a href="#" id="logout">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
             <div class="search-box button-hidden-off">
-                <a href="login.html" target="blank" class="login">Log In</a>
-                <a href="#"><button class="test-btn">Take the Test</button></a>
+                <a href="login.html" target="blank" id="login-desktop" class="login">Log In</a>
+                <!-- <a href="#"><button class="test-btn">Take the Test</button></a> -->
             </div>
         </div>
     </nav>

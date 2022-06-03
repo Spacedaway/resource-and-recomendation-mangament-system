@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resource Management | The Roothub</title>
+    <link rel="icon" href="/images/roothub-logo-white.png">
+    <link rel="stylesheet" href="/css/design.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo"><a href="#"><img src="/images/roothub full WHITE.png" alt="" width="150"></a></div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name">The Roothub</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <li>
+                        <div class="nav-iocn-link">
+                            <a href="#">Resources</a>
+                            <i class='bx bxs-chevron-down resources-arrow arrow '></i>
+                        </div>
+                        <ul class="resources-sub-menu sub-menu">
+                            <li><a href="/index.html">Web Development</a></li>
+                            <li><a href="/design.html">Digital Design</a></li>
+                        </ul>
+                    </li>
+                    <div class="side-bar-hidden side-bar-nav">
+                        <li>
+                            <div class="nav-iocn-link">
+                                <a href="#">Photos</a>
+                                <i class='bx bxs-chevron-down photos-arrow arrow '></i>
+                            </div>
+                            <ul class="photos-sub-menu sub-menu">
+                                <li><a href="#" data-li="Unsplash" id="item">Unsplash</a></li>
+                                <li><a href="#" data-li="Offset" id="item">Offset</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="side-bar-hidden side-bar-nav">
+                        <li>
+                            <div class="nav-iocn-link">
+                                <a href="#">Illustrations</a>
+                                <i class='bx bxs-chevron-down illustrations-arrow arrow '></i>
+                            </div>
+                            <ul class="illustrations-sub-menu sub-menu">
+                                <li><a href="#" id="item" data-li="Drawkit">Drawkit</a></li>
+                                <li><a href="#" id="item" data-li="Humaaans">Humaaans</a></li>
+                                <li><a href="#" id="item" data-li="Vexels">Vexels</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="side-bar-hidden side-bar-nav">
+                        <li>
+                            <div class="nav-iocn-link">
+                                <a href="#">Icons</a>
+                                <i class='bx bxs-chevron-down icon-arrow arrow '></i>
+                            </div>
+                            <ul class="icon-sub-menu sub-menu">
+                                <li><a href="#" id="item" data-li="Flaticon">Flaticon</a></li>
+                                <!-- <li><a href="#" id="item" data-li="iterm2">Iterm2</a></li>
+                                <li><a href="#" id="item" data-li="evernote">Evernote</a></li>
+                                <li><a href="#" id="item" data-li="invision">Invision</a></li>
+                                <li><a href="#" id="item" data-li="flux">F.lux</a></li> -->
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="side-bar-hidden side-bar-nav">
+                        <li>
+                            <div class="nav-iocn-link">
+                                <a href="#">Typography</a>
+                                <i class='bx bxs-chevron-down typography-arrow arrow '></i>
+                            </div>
+                            <ul class="typography-sub-menu sub-menu">
+                                <li><a href="#" id="item" data-li="Font-Squirrel">Font-Squirrel</a></li>
+                                <!-- <li><a href="#" id="item" data-li="whatfont">Whatfont or Fount</a></li>
+                                <li><a href="#" id="item" data-li="perfectpixel">PerfectPixel</a></li>
+                                <li><a href="#" id="item" data-li="stylebot">Stylebot</a></li>
+                                <li><a href="#" id="item" data-li="css3gen">CSS3 Generator</a></li>
+                                <li><a href="#" id="item" data-li="responsive-design">Responsive Design</a></li> -->
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="side-bar-hidden side-bar-nav">
+                        <li>
+                            <div class="nav-iocn-link">
+                                <a href="#">Inspiration</a>
+                                <i class='bx bxs-chevron-down inspiration-arrow arrow '></i>
+                            </div>
+                            <ul class="inspiration-sub-menu sub-menu">
+                                <!-- <li><a href="#" id="item" data-li="stackoverflow">Stack Overflow</a></li>
+                                <li><a href="#" id="item" data-li="github">Github</a></li>
+                                <li><a href="#" id="item" data-li="freecodecamp">Freecodecamp</a></li> -->
+                                <li><a href="#" id="item" data-li="Behance">Behance</a></li>
+                                <!-- <li><a href="#" id="item" data-li="w3school">W3School</a></li>
+                                <li><a href="#" id="item" data-li="frontendmentor">Frontend Mentor</a></li> -->
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="search-box button-hidden">
+                        <div class="login-mobile">
+                            <a href="login.html" target="blank" id="login-mobile" class="login">Log In</a>
+                        </div>
+                        <!-- <a href="#"><button class="test-btn">Take the Test</button></a> -->
+                    </div>
+                </ul>
+            </div>
+            <div class="user-active hidden">
+                <ul class="links">
+                    <li>
+                        <div class="search-box button-hidden-off">
+                            <a href=""><img src="/images/change-user-512.png" alt="" width="50"></a>
+                            <i class='bx bxs-chevron-down resources-arrow arrow profile-arrow'></i>
+                        </div>
+                        <ul class="resources-sub-menu sub-menu">
+                            <li><a href="/login.html">Login New User</a></li>
+                            <li><a href="#" id="logout">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-box button-hidden-off">
+                <a href="login.html" target="blank" id="login-desktop" class="login">Log In</a>
+                <!-- <a href="#"><button class="test-btn">Take the Test</button></a> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="full-page">
+        <div class="sidebar">
+            <div class="logo-details">
+                <span class="logo_name">The Roothub</span>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                        <span class="link_name">Dashboard</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Photos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-photo-album'></i>
+                            <span class="link_name">Photos</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Photos</a></li>
+                        <li><a href="#" data-li="Unsplash" id="item">Unsplash</a></li>
+                        <li><a href="#" data-li="Offset" id="item">Offset</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-spray-can'></i>
+                            <span class="link_name">Illustrations</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Illustrations</a></li>
+                        <li><a href="#" id="item" data-li="Drawkit">Drawkit</a></li>
+                        <li><a href="#" id="item" data-li="Humaaans">Humaaans</a></li>
+                        <li><a href="#" id="item" data-li="Vexels">Vexels</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bxs-camera'></i>
+                            <span class="link_name">Icons</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Icons</a></li>
+                        <li><a href="#" id="item" data-li="Flaticon">Flaticon</a></li>
+                        <!-- <li><a href="#" id="item" data-li="iterm2">Iterm2</a></li>
+                        <li><a href="#" id="item" data-li="evernote">Evernote</a></li>
+                        <li><a href="#" id="item" data-li="invision">Invision</a></li>
+                        <li><a href="#" id="item" data-li="flux">F.lux</a></li> -->
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-extension'></i>
+                            <span class="link_name">Typography</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Typography</a></li>
+                        <li><a href="#" id="item" data-li="Font-Squirrel">Font-Squirrel</a></li>
+                        <!-- <li><a href="#" id="item" data-li="whatfont">Whatfont or Fount</a></li>
+                        <li><a href="#" id="item" data-li="perfectpixel">PerfectPixel</a></li>
+                        <li><a href="#" id="item" data-li="stylebot">Stylebot</a></li>
+                        <li><a href="#" id="item" data-li="css3gen">CSS3 Generator</a></li>
+                        <li><a href="#" id="item" data-li="responsive-design">Responsive Design</a></li> -->
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-edit-alt'></i>
+                            <span class="link_name">Inspiration</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Inspiration</a></li>
+                        <!-- <li><a href="#" id="item" data-li="stackoverflow">Stack Overflow</a></li>
+                        <li><a href="#" id="item" data-li="github">Github</a></li>
+                        <li><a href="#" id="item" data-li="freecodecamp">Freecodecamp</a></li> -->
+                        <li><a href="#" id="item" data-li="Behance">Behance</a></li>
+                        <!-- <li><a href="#" id="item" data-li="w3school">W3School</a></li>
+                        <li><a href="#" id="item" data-li="frontendmentor">Frontend Mentor</a></li> -->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="home-section default-section">
+            <div class="default-page">
+                <h1>What is Digital Design and Why is it Important?</h1>
+                <img class="img-responsive" src="images/AdobeStock_334624196-1400x898.jpeg" alt="">
+                <p>Digital design, UX design, UI
+                    design, graphic design…for the laypeople among us, all of these terms are enough to make
+                    your head swirl (hint hint: it might be because they’re all related).</p>
+                <p>Recently, we spilled the tea on UX and UI design (and even covered the differences and similarities
+                    they share with graphic design). Now,
+                    we’re explaining the field of digital design and sharing all the reasons it plays an
+                    important role in the digital world.</p>
+                <p>Today, we’re digging deeper into the following
+                    questions:</p>
+                <ul>
+                    <li>What is digital
+                        design?</li>
+                    <li>What do digital designers
+                        create?</li>
+                    <li>Why is digital design
+                        important?</li>
+                    <li>What’s the difference between
+                        digital design and other types of design work?</li>
+                </ul>
+                <p>Buckle up and get ready to learn about digital design and all the
+                    ways it helps make our digital lives easy, breezy, and beautiful.</p>
+                <h2>What is digital design?</h2>
+                <p>First things first: digital design spans several forms, but it’s
+                    essentially design work made for digital spaces. To keep it simple, digital design is
+                    content created for and viewed on a digital screen. You might be thinking, “Hey, this sounds
+                    really broad.” And you’d be correct. Digital design is a
+                    broad field and is often used as an umbrella term to describe several types of design work
+                    including UX/UI design, graphic design, and web design (more on this below).
+                </p>
+                <p>Within the world of design, there are those who work in the
+                    physical world creating print designs and those who work in the digital world creating
+                    digital designs. Here’s an even further breakdown:</p>
+                <p>Print projects include magazines, brochures, business cards,
+                    print ads, book covers, and other design work you’d find in the physical world. Conversely,
+                    digital designs include deliverables you’d find on the web and other digital
+                    platforms.</p>
+                <h2>What do digital designers create?</h2>
+                <p>Digital designers create design deliverables that live on digital
+                    platforms like websites or applications. Some of these deliverables include things
+                    like:</p>
+                <ul>
+                    <li>PDF graphics for content like
+                        white papers or reports</span></li>
+                    <li>Website graphics and
+                        layouts</li>
+                    <li>Interactive elements like
+                        buttons</span></li>
+                    <li>Infographics</span></li>
+                    <li>Wireframes and
+                        prototypes</li>
+                    <li>Digital ads</li>
+                </ul>
+                <h3>Tracking the success of digital design through
+                    analytics</h3>
+                <p>Digital design tracks its success through analytics. This sets it
+                    apart from print design and gives it a leg up as designers can track how many eyes are on
+                    their designs through things like engagement (likes, comments) and page views. A digital
+                    designer may create several variations of a design and monitor its success through the use
+                    of analytics. They may conduct A/B testing with the different design variations to see which
+                    variation users best respond to. This can be especially helpful for companies using their
+                    digital designs to help advertise or sell a product or service.</p>
+                <h3>Interactivity and digital design</h3>
+                <p>A major way digital design differs from print design is that it
+                    can be, and often is, interactive. Interactivity means the digital design can respond to you
+                    (the user) and serves a functional purpose. For example, a checkout button on an online
+                    store can be clicked on to initiate&nbsp; a purchase process. This feature would be
+                    considered interactive. It’s important to note here that not all forms of digital design are
+                    interactive, some graphics like logos or infographics can simply serve the purpose of
+                    branding or telling a story.</p>
+                <h2>Which careers fall under digital design?</h2>
+                <p>You might be thinking, “Ok. I think I get it. But, what’s the
+                    difference between digital design and other types of design work?” Like we said, digital
+                    design encompasses several forms of design work. This news is especially exciting for people
+                    who are interested in working in the field because different strengths can be used across
+                    the medium. Thus, the job prospects are plentiful. Here are a few career options for those
+                    interested in digital design.</p>
+                <h3>Graphic Designers</h3>
+                <p>Graphic Designers work to create cohesive branding through the
+                    use of visual elements. They often create fixed images rather than interactive ones. One
+                    thing to remember is Graphic Designers also work in the print world. They produce
+                    deliverables like banner ads, logos, business cards, infographics, and digital
+                    illustrations.</p>
+                <h3>UX/UI Designers</h3>
+                <p>UX and UI Designers work together to create intuitive, beautiful,
+                    and functional mobile apps, websites, and products. User Interface Designers work
+                    specifically to make digital interfaces enjoyable and easy-to-use through the use of
+                    aesthetics. User Experience Designers, however, ensure users have the best experience
+                    throughout their entire journey using a product, app, or website. Like Graphic Designers, UX
+                    Designers can also work in physical spaces but you’ll mostly hear about them working in the
+                    digital world these days. UI design is a strictly digital practice. Oftentimes, these roles
+                    are merged into one.</p>
+                <h3>Web Designers</h3>
+                <p>Web Designers offer design services specifically catered to the
+                    web. They create layouts and web pages, merging the work of a graphic designer with
+                    coding. The end
+                    result is an accessible, aesthetically pleasing, and easy-to-use website.</p>
+                <h2>Why is digital design important?</h2>
+                <p>Our lives are largely online in 2020, so the design of our online
+                    interactions<br>
+                    is hugely important. Digital design affects the way we
+                    work, learn, shop, and socialize. Think of it this way: elements of digital design affect
+                    our purchasing decisions. When we shop online, we rely on the website to direct us (through
+                    design) to the pair of shoes we’re looking for. The usability of the site, the navigation,
+                    and the checkout button were all thoughtfully created by a digital designer (probably a UX
+                    and UI Designer in this case).</p>
+                <p>Digital design ensures we have useful experiences in the online
+                    world. It can be especially important for business owners who need aesthetically pleasing
+                    designs to attract and retain customers. For students who are largely going to school online
+                    right now, it’s important that their digital educational tools are easy to understand and
+                    navigate so they can be successful in their studies. The same goes for workers who use
+                    digital tools in their day-to-day lives: from communications to file sharing, an effective
+                    interface can make our jobs easier.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-section default-section Unsplash" style="display: none;">
+        <div class="Unsplash-page">
+            <h1>Unsplash: The Perfect Source for Free Images?</h1>
+            <h2><b>What is Unsplash?</b></h2>
+            <p>Unsplash is a free
+                stock photography site. The website has more than one hundred thousand contributing photographers.
+                Even more impressive is the number of photo impressions ( more than 10 billion per month) on their
+                photo library which has surpassed 1.5 million photos.</p>
+            <h2><b>How Does Unsplash Work?</b></h2>
+            <p>Unsplash is based on the premise that photographers upload their work to the site.
+                These photos are in turn curated by editors. Users are free to download the photos and use them in
+                any way they want with no restrictions.</p>
+            <h2><b>License</b></h2>
+            <p>The Unsplash license is very permissive. It is like a Creative Commons Zero License
+                (CC0). It allows users to use photos for commercial or non-commercial purposes without providing any
+                attribution or obtaining permission. This has allowed the service to become one of the largest
+                photography suppliers on the web. Whether you are a blog writer looking for images to perfectly suit
+                your content, or a company looking to visually tell a story about itself.</p>
+            <p>In fact, Unsplash has become so popular you may be realizing that you have seen
+                images downloaded from it in many online articles and websites.</p>
+            <p>The license was updated in 2018 and now does not allow Unsplash photos to be sold
+                without being first modified, which includes printed images and photos printed on goods.</p>
+            <h2><b>App</b></h2>
+            <p>The Unsplash App is an app on the Apple App Store. You can use it on your iPhone or
+                iPad. It includes useful features such as drag and drop of photos, and submission of photos to
+                Unsplash right from your portable device. No subscription is required and you have access to over
+                1.5 millions free images. Not bad for an app.
+            <p>There is also an android app named Unsplash. However from user reviews it seems that
+                it is more limited than the iOS version and has some issues to be worked out.</p>
+            <h2><b>Unsplash Photos</b></h2>
+            <p>Thanks to the entrepreneurial vision of the creators of the site, Unsplash photos
+                have made their way to the far reaches of the internet and beyond. They have helped create websites,
+                demos, physical products, brochures, and many other products. Businesses, independent creators,
+                educational institutions and non-profits have all benefited from the site.</p>
+            <h2><b>Free Pictures To Use for Business</b></h2>
+            <p>Unsplash had an interesting beginning. Its creator was having trouble locating images
+                for his company website and ended up having to hire a photographer. Later, he posted the photos
+                publicly on a social media platform and encouraged others to use them.</p>
+            <p>The practice of companies using photos for profit without paying the photographers is
+                somewhat controversial now.
+            <h2><b>How Does Unsplash Make Money?</b></h2>
+            <p>Unsplash is going to be making money through its Unsplash For Brands service,
+                described later.</p>
+            <h2><b>Unsplash Photos for Free</b></h2>
+            <p>Sharing something for free, although it may seem counterintuitive at first, attracts
+                contributors. As a result of that the audience grows even larger and the cycle repeats. It has been
+                found that a majority of users who get their images from Unplash have never downloaded stock images.
+                This larger audience is what many companies are after but cannot reach.</p>
+            <p>Don’t forget: Nothing beats free. And this does not only apply to photos. Once you
+                have a free service that draws millions of hits a month, think about all the ways you can utilize
+                that traffic.</p>
+            <p>One more interesting thing is, if you click on the info button for a photo, you
+                basically get to see the camera settings for the image, including camera make, aperture, shutter
+                speed, dimensions, focal length and ISO. How great is that, you can see what settings were used to
+                take your favorite images. There is also a share button so you can quickly share a photo via email
+                or social media.</p>
+            <p>What do you think? How has your experience been with Unsplash? Any issues our readers
+                should know about? Any other similar services I missed?</p>
+            <p>If you are looking to build your own photography portfolio website, check out</p>
+        </div>
+    </div>
+
+    <div class="home-section default-section Offset" style="display: none;">
+        <div class="Offset-page">
+            <h1>Introducing Offset: What It Means for the Contributor Community</h1>
+            <p><strong>What is Offset?</strong> Created by Shutterstock, Offset is a new site showcasing an entirely
+                new collection of images. The site is currently open to select preview customers at</p>
+            <p>Offset’s purpose is to offer high-quality commercial and editorial imagery with simple and clear
+                licensing terms through an elegant customer experience. Offset images will be available with
+                royalty-free licenses at flat, per-image pricing.</p>
+            <p>Offset images are gathered from world-class assignment photographers, publishers, and agencies, with
+                a focus on unique, authentic content. This collection of images is not available on Shutterstock or
+                vice versa, and Offset images are not available by subscription. Offset images are independently
+                sourced and do not come from Shutterstock contributors.</p>
+            <p><strong>Why create a new site?</strong></p>
+            <p>Offset is more than a unique collection; it’s a unique search experience, purchasing experience and
+                brand that’s specifically tailored to the needs of buyers of high-end imagery.</p>
+            <p><strong>How is Offset content different from Shutterstock content?</strong></p>
+            <p>In contrast to Shutterstock’s submission and review process, each Offset image is hand-selected by a
+                team of curators. The Offset team seeks out exceptional photos and illustrations with specific
+                qualities:</p>
+            <ul>
+                <li>Beautiful images that tell a story alone or together</li>
+                <li>Authentic and natural-looking images</li>
+                <li>Sophisticated and contemporary art direction and style</li>
+                <li>The highest production values and standards</li>
+            </ul>
+            <p><strong>Who are the artists who contribute to Offset? Can I contribute?</strong></p>
+            <p>Offset contributors are visual storytellers with a deep passion for their craft. Many are dedicated
+                assignment photographers and illustrators who have never licensed their images as stock before.
+                Currently the process is highly selective and by invitation only.</p>
+            <p><strong>Who decides which images are chosen for Offset?</strong></p>
+            <p>Offset curators have comprehensive backgrounds in photography and illustration, with prior experience
+                working with the top photographers and studios at leading image agencies, publishers, and consumer
+                brands. Those brands include National Geographic, William Sonoma, Trunk Archive, the Associated
+                Press, Martha Stewart Living Omnimedia, and others.</p>
+            <p><strong>How is Offset being rolled out?</strong></p>
+            <p>Our goal is for Offset to join the Shutterstock family as the premier destination for visually
+                powerful, authentic, and hard-to-find images. For now, Offset is open only to a preview audience of
+                customers. However, we plan to expand the number of invited customers, open the site to the public,
+                and ramp up our marketing throughout 2013.</p>
+        </div>
+    </div>
+
+    <div class="home-section default-section Drawkit" style="display: none;">
+        <div class="Drawkit-page">
+            <h2><strong>What is DrawKit</strong></h2>
+            <p>DrawKit is an open source website that provides ready-to-use illustrations. The illustrations
+                provided are completely free and you don’t need to add attribution when using them. That is one of
+                the reasons why DrawKit is perfect for both commercial and personal projects.</p>
+            <p>The website updates its illustrations collections every week, which means there are always fresh new
+                images. You can also sign up for weekly illustrations to make sure you get the updated collections.
+            </p>
+            <h2><strong>DrawKit Features</strong></h2>
+            <p>There are plenty of open-source websites available out there, but there are some things that make
+                DrawKit worth considering. Here are some of them:</p>
+            <h3><strong>1. Free illustrations with MIT license</strong></h3>
+            <p>DrawKit offers plenty of free illustrations under an MIT license. This means that you can use the
+                illustrations for free both for personal and commercial needs without the need to add attributions.
+            </p>
+            <h3><strong>2. Plenty of categories</strong></h3>
+            <p>It is easy to look for the illustrations you need in this website since it is neatly categorized into
+                several themes. You only need to find the categories you need and then browse through it to find the
+                images you want.</p>
+            <h3><strong>3. Customizable </strong></h3>
+            <p>Illustrations in DrawKit are available in two styles, bright colored and simple black-and white
+                sketches. They are also customisable, so you can edit the illustrations as you like to suit your
+                needs. Every component of the illustrations from its color, layout to backgrounds are customizable.
+                You can even scale them to any size you want.</p>
+            <h3><strong>4. Icons and animations are also available</strong></h3>
+            <p>DrawKit does not only provide illustrations, but also icons and animations. The illustrations and
+                icons come in SVG and PNG files, while the animations come in json files.</p>
+            <h3><strong>5. New illustrations update every week</strong></h3>
+            <p>James Daly, the author of this website aims to add 2 -4 new illustrations every day. Therefore, you
+                can expect new fresh images on the websites every week. You can also subscribe to get free weekly
+                illustrations from DrawKit.</p>
+            <h3><strong>6. You can request new illustrations</strong></h3>
+            <p>DrawKit also allows its user to request or vote on what illustrations to create next. Therefore, you
+                don’t have to worry about not finding the illustrations you need as you can request them. The
+                requested illustrations are arranged by the number of votes, so you can see which illustrations are
+                most voted.</p>
+            <p>Those are some features that make DrawKit worth trying for anyone who needs illustrations for their
+                project. Not only has a wide selection of free customizable illustrations, the website itself is
+                user friendly and easy to navigate. You can search per available category and download them at once.
+            </p>
+        </div>
+    </div>
+
+    <div class="home-section default-section Humaaans" style="display: none;">
+        <div class="Humaaans-page">
+            <h1><strong>An Introduction To Humaaans</strong></h1>
+            <p>If you’re a designer in tech you’ve likely come across them. Any search
+                for UI or product design on Dribbble will yield at least a few. Amid the sea of pastel blues and
+                pinks, accented neon purples and gamboge yellows, these faceless, nebulous bodies have become the lorem
+                ipsum of graphic embellishment in todays product landscape.</p>
+            <p>Humaaans is a library of
+                vector based, free-to-use illustrations launched in late 2018 by Pablo Stanley, Design Lead at
+                InVision. Upon its arrival, this mix-and-match collection exploded in popularity, inspiring waves of
+                similarly floaty, ambiguous humanoids that remain on-trend to this day.</p>
+            <p>For many upstart product designers, illustration libraries are a
+                practical resource to easily extend the communication around a product. As with all free asset
+                collections, they can expedite the design process while elevating the status of the original
+                creator.</p>
+            <p>However, for companies trying to establish a brand, these libraries can
+                act as pitfalls against finding a unique voice within the market.</p>
+            <h1>The Purpose of Illustrations</h1>
+            <p>Their role in product.</p>
+            <p>Illustrations used in product need to live within the context of a
+                brand. This means that effective graphics are supplemental to the overall messaging, serving only to
+                elevate what is already being communicated through an established design system. If a team finds
+                benefit in curating illustrations, time, attention, and budget is needed in order to make sure the
+                deliverables add value to the product experience.</p>
+            <p>Several digital product companies already utilize custom illustrations
+                to elevate their brand experience. Examples include:</p>
+            <p><strong>Duolingo</strong> uses its famous owl and
+                school-like graphics to communicate their friendly, game-based approach to language learning. Most
+                graphics in the app serve as visual aids within lessons.</p>
+            <p><strong>CoStar</strong> incorporates abstract symbols and
+                objects to add a little mysticism to an otherwise pulled-back, monochromatic astrology brand.</p>
+            <p><strong>Byte</strong> uses colourful 3D renderings to
+                communicate the diversity of content found within the app, suggesting an energetic and ever-changing
+                experience.</p>
+            <p>Despite their differences, the common thread between these apps is how
+                they use graphics as a tool to push communication. Everything is presented with a purpose in mind,
+                elevating the brands overall messaging.</p>
+            <p>All too often, designers plonk in graphics because someone decided “we
+                need something here”. This is when libraries like Humaaans
+                come into play. Without consideration into the communication intent behind their illustrations,
+                designers reach for the most immediate aesthetic option on hand. This graphics-for-the-sake-of-it
+                approach dilutes the core messaging of a product through visual ambiguity.</p>
+            <p>To avoid this, designers looking to add a little art should ask
+                themselves:</p>
+            <ul>
+                <li>What would graphics serve to effectively communicate
+                    within the product?</li>
+                <li>How would their presentation elevate the voice of
+                    our brand?</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="home-section default-section Vexels" style="display: none;">
+        <div class="Vexels-page">
+            <h2>What is Vexels?</h2>
+            <p>Vexels is your one-stop solution for
+                finding Merch-ready designs and graphics. With Vexels, you no longer need to search
+                Google manually for each and every graphic you want to use. You can download everything from
+                backgrounds to icons, text phrases, “Merch-ready designs”, and even t-shirt mockups!</p>
+            <p>All of their designs look amazing. With over 43,000 graphics in their database, you
+                can find just about anything for any type of design. Content is updated daily, so you will always
+                have new designs to look through. Most of them are editable so you can quickly and easily customize
+                them to your liking.</p>
+            <h2>What can Vexels designs be used for?</h2>
+            <p>For Merchers, VEXELS can be used to source great Merch-ready Designs you can sell t-shirts with on
+                Merch by Amazon and other PODs.</p>
+            <p>If subscribed, they can be used for creating Merch by Amazon t-shirt designs. But, there is <em>so
+                    much more</em> that it can be used for. Here’s a few more example:</p>
+            <h3>Adding Vectors To Existing Designs</h3>
+            <p>I’ve mentioned this several times before, but creating t-shirt variations of best-selling shirts is a
+                great way to increase your monthly earnings. When you think about it, it makes perfect sense. Rather
+                than upload designs in niches you haven’t explored, you can create variations of already selling
+                designs. This is great for both you and the customer because it gives them more variety to choose
+                from, and is great for you because it gives you a better chance at someone purchasing either of your
+                designs.</p>
+            <p>Let’s say you have a t-shirt of a bear that is selling pretty well on Amazon. With Vexels, you could
+                quickly download a vector of a tree, slap it on your design, and upload that.</p>
+            <p>You now have a similar, but still different, variation of your best-selling design.</p>
+            <h3>For Designers</h3>
+            <p>If you are a designer, then Vexels would be perfect for you. Vexels offers a “Merch Subscription
+                Plan” specifically for Merch Sellers and Merch Designers. If you prefer to outsource your designs,
+                you can still make use of Vexels. Simply find the artwork you want to use for a particular design,
+                download it, and tell your designer to use this in their design. This ensures that the design isn’t
+                trademarked and that it can be used for commercial purposes!</p>
+            <h2>What CAN’T the designs be used for?</h2>
+            <p>You obviously can’t resell or redistribute the artwork. You also can’t use the artwork to make
+                offensive, unlawful, defamatory, or pornographic material. Which shouldn’t be a problem for any of
+                you, because Amazon doesn’t allow those types of shirts to sell, either.</p>
+        </div>
+    </div>
+
+    <div class="home-section default-section Flaticon" style="display: none;">
+        <div class="Flaticon-page">
+            <h1>An Introduction to Beautiful Flat Icons Design</h1>
+            <p>Flat Design is one of the newest approaches in web
+                design, aiming for simplicity and powerful visual impact and using shapes as patterns and
+                backgrounds. Microsoft’s Metro user interface is probably the most popular Flat Design example.</p>
+            <p>We already discussed the Flat Design approach in-depth, and we did it for quite some time now. Most
+                of you know Designmodo promotes Flat Design with proudness and designers its own framework according
+                to the Flat Design principles. Therefore today we took our time to browse around the web and find
+                even more flat design examples, only this time we will focus mostly on icons, not on web designs
+                as whole.</p>
+            <h3>Responsive Icon</h3>
+            <p>This icon can be used to mark themes and layouts which are responsive and fit every device perfectly.
+                Funny about this is that if you look for more than five seconds at the icon, the background will
+                change. Actually, it is not really happening, but your eyes see it that way.</p>
+            <h3>Calendar and Night Icon</h3>
+            <p>There are two icons here: there is the calendar icon, which in my opinion is the result of some
+                amazing work, and a more abstract icon, which could be used for activating a “sleep mode” for
+                example. Although the second icon is a bit abstract, the calendar is amazing.</p>
+        </div>
+    </div>
+
+    <div class="home-section default-section Behance" style="display: none;">
+        <div class="Behance-page">
+            <h2> What Is Behance?</h2>
+            <p>Behance is one of the
+                many tools that Adobe has to help creators stand out. It’s somewhat like LinkedIn, in the sense that
+                you can use it to showcase your professional work and connect with others.</p>
+            <p>Creators in several fields can use Behance,
+                but it’s especially helpful for visual artists such as designers, photographers, and videographers.
+            </p>
+            <p>Behance is quite old in social media terms; Adobe launched the service in 2005.</p>
+            <h2> What Can You Do on Behance?</h2>
+            <p>Behance’s offerings are pretty diverse, and knowing what you can use the service for before signing
+                up will help you get the most out of it. Below is a breakdown of the main things you can use this
+                Adobe-owned tool for.</p>
+            <p>The main reason most creators use Behance is for creating a portfolio. You can publish projects that
+                you’ve either completed for clients or for your own enjoyment.</p>
+            <p>When you create a new project to share, you can include several elements. These include, but are not
+                limited to:</p>
+            <ul>
+                <li> Photos </li>
+                <li> Videos </li>
+                <li> Audio </li>
+            </ul>
+            <p>If you’ve got an Adobe Lightroom account, you can save time and import visuals directly from there.
+                When you create new projects on Behance, you can increase your visibility by adding tags and sharing
+                the tools you’ve used.</p>
+            <h3>Display NFTs</h3>
+            <p>In 2021, non-fungible tokens (NFTs) became increasingly prominent online. If done correctly, you can
+                potentially build an additional income stream by selling these.</p>
+            <p>On Behance, you can share your NFTs with others. After creating them, all you need to do is connect
+                your cryptocurrency wallet with your Adobe account and make the tokens visible to others.</p>
+        </div>
+    </div>
+
+    <div class="home-section default-section Font-Squirrel" style="display: none;">
+        <div class="Font-Squirrel-page">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatem accusamus culpa explicabo
+            corporis laudantium excepturi, quas dolore rerum nihil nobis molestias dignissimos incidunt? Rem
+            necessitatibus velit nostrum illum enim fuga nisi assumenda temporibus vero, blanditiis cum quas. Quae,
+            explicabo fugiat? Aliquid adipisci, in expedita, consectetur harum eveniet unde itaque blanditiis iste quae
+            voluptatibus doloremque quibusdam cupiditate molestias illum sint ratione asperiores commodi quisquam quo
+            excepturi voluptates nesciunt! Dolores cum molestiae iste, soluta porro, repudiandae dolore sequi placeat
+            enim, quae deserunt sed dicta vel harum ipsam sit perferendis voluptatum cupiditate asperiores libero at
+            neque id ipsum? Sint aliquam ipsa recusandae!
+        </div>
+    </div>
+    <script src="/javascript/design.js"></script>
+</body>
+
+</html>

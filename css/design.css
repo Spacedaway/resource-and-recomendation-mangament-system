@@ -588,7 +588,7 @@ nav .navbar .links li:hover .resources-sub-menu {
     }
 
     .links li:hover .resources-arrow,
-    .links li:hover .category-arrow {
+    .links li:hover .photos-arrow {
         transform: rotate(0deg);
     }
 
@@ -606,29 +606,29 @@ nav .navbar .links li:hover .resources-sub-menu {
     }
 
     nav .navbar .links li:hover .resources-sub-menu,
-    nav .navbar .links li:hover .applications-sub-menu,
-    nav .navbar .links li:hover .cornerstones-sub-menu,
-    nav .navbar .links li:hover .extensions-sub-menu,
-    nav .navbar .links li:hover .websites-sub-menu,
-    nav .navbar .links li:hover .category-sub-menu {
+    nav .navbar .links li:hover .icon-sub-menu,
+    nav .navbar .links li:hover .illustrations-sub-menu,
+    nav .navbar .links li:hover .typography-sub-menu,
+    nav .navbar .links li:hover .inspiration-sub-menu,
+    nav .navbar .links li:hover .photos-sub-menu {
         display: none;
     }
 
     .navbar .nav-links.show1 .links .resources-sub-menu,
-    .navbar .nav-links.show4 .links .applications-sub-menu,
-    .navbar .nav-links.show3 .links .cornerstones-sub-menu,
-    .navbar .nav-links.show5 .links .extensions-sub-menu,
-    .navbar .nav-links.show6 .links .websites-sub-menu,
-    .navbar .nav-links.show2 .links .category-sub-menu {
+    .navbar .nav-links.show4 .links .icon-sub-menu,
+    .navbar .nav-links.show3 .links .illustrations-sub-menu,
+    .navbar .nav-links.show5 .links .typography-sub-menu,
+    .navbar .nav-links.show6 .links .inspiration-sub-menu,
+    .navbar .nav-links.show2 .links .photos-sub-menu {
         display: block;
     }
 
     .navbar .nav-links.show1 .links .resources-arrow,
-    .navbar .nav-links.show4 .links .applications-arrow,
-    .navbar .nav-links.show3 .links .cornerstones-arrow,
-    .navbar .nav-links.show5 .links .extensions-arrow,
-    .navbar .nav-links.show6 .links .websites-arrow,
-    .navbar .nav-links.show2 .links .category-arrow {
+    .navbar .nav-links.show4 .links .icon-arrow,
+    .navbar .nav-links.show3 .links .illustrations-arrow,
+    .navbar .nav-links.show5 .links .typography-arrow,
+    .navbar .nav-links.show6 .links .inspiration-arrow,
+    .navbar .nav-links.show2 .links .photos-arrow {
         transform: rotate(180deg);
     }
 

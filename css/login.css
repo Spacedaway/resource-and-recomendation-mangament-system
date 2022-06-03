@@ -25,6 +25,12 @@ html, body {
     color: #fff;
 }
 
+#errorMsg {
+    color: red;
+    font-weight: 900;
+    text-align: center;
+}
+
 .wrapper {
     overflow: hidden;
     max-width: 390px;

@@ -39,28 +39,28 @@ resourcesArrow.onclick = function () {
     navLinks.classList.toggle("show1");
 };
 
-let categoryArrow = document.querySelector(".category-arrow");
-categoryArrow.onclick = function () {
+let photosArrow = document.querySelector(".photos-arrow");
+photosArrow.onclick = function () {
     navLinks.classList.toggle("show2");
 };
 
-let cornerstonesArrow = document.querySelector(".cornerstones-arrow");
-cornerstonesArrow.onclick = function () {
+let illustrationsArrow = document.querySelector(".illustrations-arrow");
+illustrationsArrow.onclick = function () {
     navLinks.classList.toggle("show3");
 };
 
-let applicationsArrow = document.querySelector(".applications-arrow");
-applicationsArrow.onclick = function () {
+let iconArrow = document.querySelector(".icon-arrow");
+iconArrow.onclick = function () {
     navLinks.classList.toggle("show4");
 };
 
-let extensionsArrow = document.querySelector(".extensions-arrow");
-extensionsArrow.onclick = function () {
+let typographyArrow = document.querySelector(".typography-arrow");
+typographyArrow.onclick = function () {
     navLinks.classList.toggle("show5");
 };
 
-let websitesArrow = document.querySelector(".websites-arrow");
-websitesArrow.onclick = function () {
+let inspirationArrow = document.querySelector(".inspiration-arrow");
+inspirationArrow.onclick = function () {
     navLinks.classList.toggle("show6");
 };
 
@@ -78,74 +78,16 @@ for (let i = 0; i < li_elements.length; i++) {
         defaultEl.forEach(function (item) {
             item.style.display = "none";
         });
-        if (li_value == "html") {
+        if (li_value == "Unsplash") {
             document.querySelector("." + li_value).style.display = "block";
         } else if (
-            li_value == "css" ||
-            li_value == "javascript" ||
-            li_value == "react" ||
-            li_value == "wordpress" ||
-            li_value == "mamp" ||
-            li_value == "git" ||
-            li_value == "vsc" ||
-            li_value == "jquery" ||
-            li_value == "bootstrap" ||
-            li_value == "atom" ||
-            li_value == "iterm2" ||
-            li_value == "evernote" ||
-            li_value == "wappalyzer" ||
-            li_value == "whatfont" ||
-            li_value == "perfectpixel" ||
-            li_value == "stylebot" ||
-            li_value == "css3gen" ||
-            li_value == "responsive-design" ||
-            li_value == "stackoverflow" ||
-            li_value == "github" ||
-            li_value == "freecodecamp" ||
-            li_value == "scrimba" ||
-            li_value == "w3school" ||
-            li_value == "frontendmentor"
-        ) {
-            document.querySelector("." + li_value).style.display = "block";
-        } else {
-            console.log("");
-        }
-    });
-}
-
-for (let i = 0; i < li_elements.length; i++) {
-    li_elements[i].addEventListener("click", function () {
-        const li_value = this.getAttribute("data-li");
-        defaultEl.forEach(function (item) {
-            item.style.display = "none";
-        });
-        if (li_value == "html") {
-            document.querySelector("." + li_value).style.display = "block";
-        } else if (
-            li_value == "css" ||
-            li_value == "javascript" ||
-            li_value == "react" ||
-            li_value == "wordpress" ||
-            li_value == "mamp" ||
-            li_value == "git" ||
-            li_value == "vsc" ||
-            li_value == "jquery" ||
-            li_value == "bootstrap" ||
-            li_value == "atom" ||
-            li_value == "iterm2" ||
-            li_value == "evernote" ||
-            li_value == "wappalyzer" ||
-            li_value == "whatfont" ||
-            li_value == "perfectpixel" ||
-            li_value == "stylebot" ||
-            li_value == "css3gen" ||
-            li_value == "responsive-design" ||
-            li_value == "stackoverflow" ||
-            li_value == "github" ||
-            li_value == "freecodecamp" ||
-            li_value == "scrimba" ||
-            li_value == "w3school" ||
-            li_value == "frontendmentor"
+            li_value == "Offset" ||
+            li_value == "Drawkit" ||
+            li_value == "Humaaans" ||
+            li_value == "Vexels" ||
+            li_value == "Flaticon" ||
+            li_value == "Behance" ||
+            li_value == "Font-Squirrel"
         ) {
             document.querySelector("." + li_value).style.display = "block";
         } else {

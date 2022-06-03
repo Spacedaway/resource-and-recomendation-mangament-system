@@ -6,7 +6,11 @@ const loginLabel = document.querySelector("label.login");
 const signupLabel = document.querySelector("label.signup");
 const signupLink = document.querySelector("form .signup-link a");
 const signupBtn = document.querySelector("#signup-btn");
+const errorMsgEl = document.querySelector("#errorMsg");
+let userLoggedInEl = false;
 let userInfo = [];
+userInfo = JSON.parse(localStorage.getItem("userData")) || [];
+let currentUser = [];
 
 signupLabel.onclick = () => {
     loginForm.style.marginLeft = "-50%";
@@ -37,30 +41,43 @@ signupForm.addEventListener("submit", function () {
         Course: courseEl,
     };
     userInfo.push(formData);
+    console.log(userInfo);
     localStorage.setItem("userData", JSON.stringify(userInfo));
     signupForm.reset();
 });
 
 loginForm.addEventListener("submit", function () {
-    let userData = []
-    userData = JSON.parse(localStorage.getItem("userData"));
     const signInEmailEl = document.querySelector("#signin-email").value;
     const signInPasswordEl = document.querySelector("#signin-password").value;
-    for (let i = 0; i < userData.length; i++) {
+    for (let i = 0; i < userInfo.length; i++) {
         if (
-            userData[i].Email == signInEmailEl &&
-            userData[i].Password == signInPasswordEl
+            userInfo[i].Email == signInEmailEl &&
+            userInfo[i].Password == signInPasswordEl
         ) {
-            let newUserArr = []
-            const usersName = `${(userData[i], Fname)} ${(userData[i], Lname)}`;
-            const usersCourse = `${(userData[i], Course)}`;
-            newUserArr.push(usersName, usersCourse)
-            console.log(newUserArr)
+            errorMsgEl.textContent = "";
+            userLoggedInEl = true
+            currentUser.push(
+                userInfo[i].Fname,
+                userInfo[i].Lname,
+                userInfo[i].Course,
+                userInfo[i].Email
+            );
+            localStorage.setItem(
+                "currentUserInfo",
+                JSON.stringify(currentUser)
+            );
+            localStorage.setItem(
+                "isUserLoggedIn",
+                JSON.stringify(userLoggedInEl)
+            );
             window.open("/profile.html");
-        } else {
-            alert("nope");
+        } else if (
+            userInfo[i].Email != signInEmailEl ||
+            userInfo[i].Password != signInPasswordEl
+        ) {
+            errorMsgEl.textContent = "Incorrect Email or Password";
         }
     }
-    loginForm.reset();
+    // loginForm.reset();
 });
 // localStorage.clear();
