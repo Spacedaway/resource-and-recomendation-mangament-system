@@ -15,6 +15,7 @@ let currentUser = [];
 signupLabel.onclick = () => {
     loginForm.style.marginLeft = "-50%";
     loginText.style.marginLeft = "-50%";
+    errorMsgEl.textContent = "";
 };
 
 loginLabel.onclick = () => {
@@ -55,7 +56,7 @@ loginForm.addEventListener("submit", function () {
             userInfo[i].Password == signInPasswordEl
         ) {
             errorMsgEl.textContent = "";
-            userLoggedInEl = true
+            userLoggedInEl = true;
             currentUser.push(
                 userInfo[i].Fname,
                 userInfo[i].Lname,
@@ -70,11 +71,15 @@ loginForm.addEventListener("submit", function () {
                 "isUserLoggedIn",
                 JSON.stringify(userLoggedInEl)
             );
-            window.open("/profile.html");
-        } else if (
-            userInfo[i].Email != signInEmailEl ||
-            userInfo[i].Password != signInPasswordEl
-        ) {
+            window.open("./profile.html");
+        }
+        // else if (
+        //     userInfo[i].Email != signInEmailEl ||
+        //     userInfo[i].Password != signInPasswordEl
+        // ) {
+        //     errorMsgEl.textContent = "Incorrect Email or Password";
+        // }
+        else {
             errorMsgEl.textContent = "Incorrect Email or Password";
         }
     }

@@ -102,8 +102,8 @@ const desktopLoginEl = document.querySelector("#login-desktop");
 if (userLoggedInEl == true) {
     desktopLoginEl.textContent = "Logged In";
     mobileLoginEl.textContent = "Logged In";
-    desktopLoginEl.setAttribute("href", "#");
-    mobileLoginEl.setAttribute("href", "#");
+    desktopLoginEl.setAttribute("href", "./profile.html");
+    mobileLoginEl.setAttribute("href", "./profile.html");
     desktopLoginEl.removeAttribute("target");
     mobileLoginEl.removeAttribute("target");
 }

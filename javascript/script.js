@@ -114,54 +114,13 @@ for (let i = 0; i < li_elements.length; i++) {
     });
 }
 
-for (let i = 0; i < li_elements.length; i++) {
-    li_elements[i].addEventListener("click", function () {
-        const li_value = this.getAttribute("data-li");
-        defaultEl.forEach(function (item) {
-            item.style.display = "none";
-        });
-        if (li_value == "html") {
-            document.querySelector("." + li_value).style.display = "block";
-        } else if (
-            li_value == "css" ||
-            li_value == "javascript" ||
-            li_value == "react" ||
-            li_value == "wordpress" ||
-            li_value == "mamp" ||
-            li_value == "git" ||
-            li_value == "vsc" ||
-            li_value == "jquery" ||
-            li_value == "bootstrap" ||
-            li_value == "atom" ||
-            li_value == "iterm2" ||
-            li_value == "evernote" ||
-            li_value == "wappalyzer" ||
-            li_value == "whatfont" ||
-            li_value == "perfectpixel" ||
-            li_value == "stylebot" ||
-            li_value == "css3gen" ||
-            li_value == "responsive-design" ||
-            li_value == "stackoverflow" ||
-            li_value == "github" ||
-            li_value == "freecodecamp" ||
-            li_value == "scrimba" ||
-            li_value == "w3school" ||
-            li_value == "frontendmentor"
-        ) {
-            document.querySelector("." + li_value).style.display = "block";
-        } else {
-            console.log("");
-        }
-    });
-}
-
 const mobileLoginEl = document.querySelector("#login-mobile");
 const desktopLoginEl = document.querySelector("#login-desktop");
 if (userLoggedInEl == true) {
     desktopLoginEl.textContent = "Logged In";
     mobileLoginEl.textContent = "Logged In";
-    desktopLoginEl.setAttribute("href", "#");
-    mobileLoginEl.setAttribute("href", "#");
+    desktopLoginEl.setAttribute("href", "./profile.html");
+    mobileLoginEl.setAttribute("href", "./profile.html");
     desktopLoginEl.removeAttribute("target");
     mobileLoginEl.removeAttribute("target");
 }
